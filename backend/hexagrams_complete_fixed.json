@@ -1,0 +1,8002 @@
+[
+  {
+    "number": 1,
+    "name": "乾卦",
+    "chineseName": "乾為天",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "乾。",
+      "explanation": "元亨利貞。"
+    },
+    "image": {
+      "text": "天行健，君子以自強不息。",
+      "explanation": "天行健，君子以自強不息。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下乾上乾)相疊。象徵天，喻龍(德才的君子)，又象徵純粹的陽和健，表明興盛強健。乾卦是根據萬物變通的道理，以“元、亨、利、貞”為卦辭，表示吉祥如意，教導人遵守天道的德行。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 潛龍勿用。",
+        "image": {
+          "text": "",
+          "explanation": "潛龍勿用，陽在下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 見龍在田，利見大人。",
+        "image": {
+          "text": "",
+          "explanation": "見龍在田，德施普也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 君子終日乾乾，夕惕若;厲，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "終日乾乾，反覆道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 或躍在淵，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "或躍在淵，進無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 飛龍在天，利見大人。",
+        "image": {
+          "text": "",
+          "explanation": "飛龍在天，大人造也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 亢龍有悔。",
+        "image": {
+          "text": "",
+          "explanation": "亢龍有悔，盈不可久也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "name": "坤卦",
+    "chineseName": "坤為地",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "坤。",
+      "explanation": "元亨，利牝馬之貞。君子有攸往，先迷後得主。利西南得朋，東北喪朋。安貞吉。"
+    },
+    "image": {
+      "text": "地勢坤，君子以厚德載物。",
+      "explanation": "地勢坤，君子以厚德載物。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下坤上坤)相疊，陰性。象徵地(與乾卦相反)，順從天。承載萬物，伸展無窮無盡。坤卦以雌馬為象徵，表明地道生育撫養萬物，而又依天順時，性情溫順。它以“先迷後得”證明“坤”順從“乾”，依隨“乾”，才能把握正確方向，遵循正道，獲取吉利。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 履霜，堅冰至。",
+        "image": {
+          "text": "",
+          "explanation": "履霜堅冰，陰始凝也。馴致其道，至堅冰也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 直方大，不習，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "六二之動，直以方也;不習，無不利，地道光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 含章可貞。或從王事，無成有終。",
+        "image": {
+          "text": "",
+          "explanation": "含章可貞，以時發也;或從王事，知光大也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 括囊，無咎無譽。",
+        "image": {
+          "text": "",
+          "explanation": "括囊無咎，慎不害也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 黃裳，元吉。",
+        "image": {
+          "text": "",
+          "explanation": "黃裳元吉，文在中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 龍戰於野，其血玄黃。",
+        "image": {
+          "text": "",
+          "explanation": "龍戰於野，其道窮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "name": "屯卦",
+    "chineseName": "水雷屯",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "屯。",
+      "explanation": "元亨利貞。勿用有攸往，利建侯。"
+    },
+    "image": {
+      "text": "雲雷屯，君子以經綸。",
+      "explanation": "雲雷屯，君子以經綸。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上坎)相疊，震為雷，喻動;坎為雨，喻險。雷雨交加，險象叢生，環境惡劣。“屯”原指植物萌生大地。萬物始生，充滿艱難險阻，然而順時應運，必欣欣向榮。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 盤桓，利居貞，利建侯。",
+        "image": {
+          "text": "",
+          "explanation": "雖盤桓，志行正也;以貴下賤，大得民也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 屯如邅如，乘馬班如。匪寇婚媾，女子貞不字，十年乃字。",
+        "image": {
+          "text": "",
+          "explanation": "六二之難，乘剛也;十年乃字，反常也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 即鹿無虞，唯入於林中。君子幾，不如舍。往吝。",
+        "image": {
+          "text": "",
+          "explanation": "即鹿無虞，以從禽也。君子舍之，往吝，窮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 乘馬班如，求婚媾，往吉，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "求而往，明也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 屯其膏，小貞吉，大貞凶。",
+        "image": {
+          "text": "",
+          "explanation": "屯其膏，施未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 乘馬班如，泣血漣如。",
+        "image": {
+          "text": "",
+          "explanation": "泣血漣如。何可長也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "name": "蒙卦",
+    "chineseName": "山水蒙",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "蒙。",
+      "explanation": "亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。利貞。"
+    },
+    "image": {
+      "text": "山下出泉，蒙。君子以果行育德。",
+      "explanation": "山下出泉，蒙。君子以果行育德。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上艮)相疊，艮是山的形象，喻止;坎是水的形象，喻險。卦形為山下有險，仍不停止前進，是為蒙昧，故稱蒙卦。但因把握時機，行動切合時宜，因此，具有啟蒙和通達的卦象。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 發蒙，利用刑人，用說桎梏。以往，吝。",
+        "image": {
+          "text": "",
+          "explanation": "利用刑人，以正法也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 包蒙，吉。納婦吉。子克家。",
+        "image": {
+          "text": "",
+          "explanation": "子克家，剛柔接也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 勿用取女，見金夫，不有躬。無攸利。",
+        "image": {
+          "text": "",
+          "explanation": "勿用取女，行不順也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 困蒙，吝。",
+        "image": {
+          "text": "",
+          "explanation": "困蒙之吝，獨遠實也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 童蒙，吉。",
+        "image": {
+          "text": "",
+          "explanation": "童蒙之吉，順以巽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 擊蒙。不利為寇，利禦寇。",
+        "image": {
+          "text": "",
+          "explanation": "利用禦寇，上下順也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "name": "需卦",
+    "chineseName": "水天需",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "需。",
+      "explanation": "有孚，光亨，貞吉。利涉大川。"
+    },
+    "image": {
+      "text": "雲上於天，需。君子以飲食宴樂。",
+      "explanation": "雲上於天，需。君子以飲食宴樂。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上坎)相疊，下卦是乾，剛健之意;上卦是坎，險陷之意。以剛逢險，宜穩健之妥，不可冒失行動，觀時待變，所往一定成功。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 需於郊，利用恆，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "需於郊，不犯難行也;利用恆，無咎，未失常也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 需於沙，小有言，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "需於沙，衍在中也;雖小有言，以吉終也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 需於泥，致寇至。",
+        "image": {
+          "text": "",
+          "explanation": "需於泥，災在外也。自我致寇，敬慎不敗也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 需於血，出自穴。",
+        "image": {
+          "text": "",
+          "explanation": "需於血，順以聽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 需於酒食，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "酒食貞吉，以中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 入於穴，有不速之客三人來，敬之終吉。",
+        "image": {
+          "text": "",
+          "explanation": "不速之客，敬之終吉;雖不當位，未大失也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "name": "訟卦",
+    "chineseName": "天水訟",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "訟。",
+      "explanation": "有孚，窒惕，中吉，終凶。利見大人，不利涉大川。"
+    },
+    "image": {
+      "text": "天與水違行，訟。君子以做事謀始。",
+      "explanation": "天與水違行，訟。君子以做事謀始。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上乾)相疊。同需卦相反，互為“綜卦”。乾為剛健，坎為險陷。剛與險，健與險，彼此反對，定生爭訟。爭訟非善事，務必慎重戒懼。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 不永所事，小有言，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "不永所事，訟不可長也;雖小有言，其辯明也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 不克訟，歸而逋，其邑人三百戶無眚。",
+        "image": {
+          "text": "",
+          "explanation": "不克訟，歸逋竄也;自下訟上，患至掇也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 食舊德，貞厲，終吉。或從王事，無成。",
+        "image": {
+          "text": "",
+          "explanation": "食舊德，從上吉也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 不克訟，復即命，渝安貞，吉。",
+        "image": {
+          "text": "",
+          "explanation": "復即命，渝安貞，吉，不失也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 訟，元吉。",
+        "image": {
+          "text": "",
+          "explanation": "訟，元吉，以中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 或錫之鞶帶，終朝三褫之。",
+        "image": {
+          "text": "",
+          "explanation": "以訟受服，亦不足敬也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "name": "師卦",
+    "chineseName": "地水師",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "師。",
+      "explanation": "貞，丈人吉，無咎。"
+    },
+    "image": {
+      "text": "地中有水，師。君子以容民畜眾。",
+      "explanation": "地中有水，師。君子以容民畜眾。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上坤)相疊。“師”指軍隊。坎為水、為險;坤為地、為順，喻寓兵於農。兵凶戰危，用兵乃聖人不得已而為之，但它可以順利無阻礙地解決矛盾，因為順乎形勢，師出有名，故能化凶為吉。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 師出以律，否臧，凶。",
+        "image": {
+          "text": "",
+          "explanation": "師出以律，失律凶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 在師中，吉無咎，王三錫命。",
+        "image": {
+          "text": "",
+          "explanation": "在師中吉，承天寵也，王三錫命，懷萬邦也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 師或輿屍，凶。",
+        "image": {
+          "text": "",
+          "explanation": "師或輿屍，大無功也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 師左次，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "左次無咎，未失常也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 田有禽，利執言，無咎。長子帥師，弟子輿屍，貞凶。",
+        "image": {
+          "text": "",
+          "explanation": "長子帥師，以中行也;弟子輿屍，使不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 大君有命，開國承家，小人勿用。",
+        "image": {
+          "text": "",
+          "explanation": "大君有命，以正功也;小人勿用，必亂邦也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "name": "比卦",
+    "chineseName": "水地比",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "比。",
+      "explanation": "吉。原筮，元永貞，無咎。不寧方來，後夫凶。"
+    },
+    "image": {
+      "text": "地上有水，比。先王以建萬國，親諸侯。",
+      "explanation": "地上有水，比。先王以建萬國，親諸侯。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坤上坎)相疊，坤為地，坎為水。水附大地，地納河海，相互依賴，親密無間。此卦與師卦完全相反，互為綜卦。它闡述的是相親相輔，寬宏無私，精誠團結的道理。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 有孚，比之，無咎。有孚盈缶，終來有它吉。",
+        "image": {
+          "text": "",
+          "explanation": "比之初六，有它吉也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 比之自內，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "比之自內，不自失也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 比之匪人。",
+        "image": {
+          "text": "",
+          "explanation": "比之匪人，不亦傷乎。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 外比之，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "外比於賢，以從上也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 顯比，王用三驅，失前禽。邑人不誡，吉。",
+        "image": {
+          "text": "",
+          "explanation": "顯比之吉，位正中也。舍逆取順，失前禽也。邑人不誡，上使中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 比之無首，凶。",
+        "image": {
+          "text": "",
+          "explanation": "比之無首，無所終也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "name": "小畜卦",
+    "chineseName": "風天小畜",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "小畜。",
+      "explanation": "亨。密雲不雨，自我西郊。"
+    },
+    "image": {
+      "text": "風行天上，小畜。君子以懿文德。",
+      "explanation": "風行天上，小畜。君子以懿文德。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上巽)相疊，乾為天，巽為風。喻風調雨順，穀物滋長，故卦名小畜(蓄)。力量有限，須待發展到一定程度，才可大有作為。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 復自道，何其咎?吉。",
+        "image": {
+          "text": "",
+          "explanation": "復自道，其義吉也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 牽復，吉。",
+        "image": {
+          "text": "",
+          "explanation": "牽復在中，亦不自失也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 輿說輻，夫妻反目。",
+        "image": {
+          "text": "",
+          "explanation": "夫妻反目，不能正室也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 有孚，血去惕出，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "有孚惕出，上合志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 有孚攣如，富以其鄰。",
+        "image": {
+          "text": "",
+          "explanation": "有孚攣如，不獨富也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 既雨既處，尚德載。婦貞厲。月幾望，君子征凶。",
+        "image": {
+          "text": "",
+          "explanation": "既雨既處，德積載也。君子征凶，有所疑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "name": "履卦",
+    "chineseName": "天澤履",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "履。",
+      "explanation": "履虎尾，不咥人，亨。"
+    },
+    "image": {
+      "text": "上天下澤，履。君子以辨上下，定民志。",
+      "explanation": "上天下澤，履。君子以辨上下，定民志。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上乾)相疊，乾為天，兌為澤，以天喻君，以澤喻民，原文：“履(踩)虎尾，不咥(咬)人”。因此，結果吉利。君上民下，各得其位。兌柔遇乾剛，所履危。履意為實踐，卦義是腳踏實地的向前進取的意思。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 素履，往無咎。",
+        "image": {
+          "text": "",
+          "explanation": "素履之往，獨行願也 。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 履道坦坦，幽人貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "幽人貞吉，中不自亂也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 眇能視，跛能履。履虎尾，咥人，凶。武人為於大君。",
+        "image": {
+          "text": "",
+          "explanation": "眇能視，不足以有明也。跛能履，不足以與行也。咥人之凶，位不當也。武人為於大君，志剛也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 履虎尾，愬愬，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "愬愬終吉，志行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 夬履，貞厲。",
+        "image": {
+          "text": "",
+          "explanation": "夬履貞厲。位正當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 視履考祥，其鏇元吉。",
+        "image": {
+          "text": "",
+          "explanation": "元吉在上，大有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "name": "泰卦",
+    "chineseName": "地天泰",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "泰。",
+      "explanation": "小往大來，吉亨。"
+    },
+    "image": {
+      "text": "天地交，泰。後以財成天地之道，輔相天地之宜，以左右民。",
+      "explanation": "天地交，泰。後以財成天地之道，輔相天地之宜，以左右民。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上坤)相疊，乾為天，為陽;坤為地，為陰，陰陽交感，上下互通，天地相交，萬物紛紜。反之則凶，萬事萬物，皆對立，轉化，盛極必衰，衰而轉盛，故應時而變者泰(通)。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 拔茅，茹以其匯，征吉。",
+        "image": {
+          "text": "",
+          "explanation": "拔茅征吉，志在外也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 包荒，用馮河，不遐遺，朋亡，得尚於中行。",
+        "image": {
+          "text": "",
+          "explanation": "包荒，得尚於中行，以光大也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 無平不陂，無往不復。艱貞無咎。勿恤其孚，於食有福。",
+        "image": {
+          "text": "",
+          "explanation": "無往不復，天地際也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 翩翩不富以其鄰，不戒以孚。",
+        "image": {
+          "text": "",
+          "explanation": "翩翩不富，皆失實也;不戒以孚，中心愿也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 帝乙歸妹，以祉元吉。",
+        "image": {
+          "text": "",
+          "explanation": "以祉元吉，中以行願也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 城復於隍，勿用師。自邑告命，貞吝。",
+        "image": {
+          "text": "",
+          "explanation": "城復於隍，其命亂也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "name": "否卦",
+    "chineseName": "天地否",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "否。",
+      "explanation": "否之匪人。不利君子貞。大往小來。"
+    },
+    "image": {
+      "text": "天地不交，否。君子以儉德辟難，不可榮以祿。",
+      "explanation": "天地不交，否。君子以儉德辟難，不可榮以祿。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坤上乾)相疊，其結構同泰卦相反，系陽氣上升，陰氣下降，天地不交，萬物不通。它們彼此為“綜卦”，表明泰極而否，否極泰來，互為因果。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 拔茅，茹以其匯，貞吉，亨。",
+        "image": {
+          "text": "",
+          "explanation": "拔茅貞吉，志在君也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 包承，小人吉;大人否，亨。",
+        "image": {
+          "text": "",
+          "explanation": "大人否，享，不亂群也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 包羞。",
+        "image": {
+          "text": "",
+          "explanation": "包羞，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 有命無咎，疇離祉。",
+        "image": {
+          "text": "",
+          "explanation": "有命無咎，志行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 休否，大人吉;其亡其亡，繫於苞桑。",
+        "image": {
+          "text": "",
+          "explanation": "大人之吉，位正當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 傾否，先否後喜。",
+        "image": {
+          "text": "",
+          "explanation": "否終則傾，何可長也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "name": "同人卦",
+    "chineseName": "天火同人",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "同人。",
+      "explanation": "同人於野，亨。利涉大川，利君子貞。"
+    },
+    "image": {
+      "text": "天與火，同人;君子以類族辨物。",
+      "explanation": "天與火，同人;君子以類族辨物。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上乾)相疊，乾為天，為君;離為火，為臣民百姓，上天下火，火性上升，同於天，上下和同，同舟共濟，人際關係和諧，天下大同。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 同人於門，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "出門同人，又誰咎也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 同人於宗，吝。",
+        "image": {
+          "text": "",
+          "explanation": "同人於宗，吝道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 伏戎於莽，升其高陵，三歲不興。",
+        "image": {
+          "text": "",
+          "explanation": "伏戎於莽，敵剛也，三歲不興，安行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 乘其墉，弗克攻，吉。",
+        "image": {
+          "text": "",
+          "explanation": "乘其墉，義弗克也，其吉，則困而反則也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 同人，先號啕而後笑，大師克相遇。",
+        "image": {
+          "text": "",
+          "explanation": "同人之先，以中直也。大師相遇，言相剋也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 同人於郊，無悔。",
+        "image": {
+          "text": "",
+          "explanation": "同人於郊，志未得也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "name": "大有卦",
+    "chineseName": "火天大有",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "大有。",
+      "explanation": "元亨。"
+    },
+    "image": {
+      "text": "火在天上，大有。君子以遏惡揚善，順天休命。",
+      "explanation": "火在天上，大有。君子以遏惡揚善，順天休命。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上離)相疊。上卦為離，為火;下卦為乾，為天。火在天上，普照萬物，萬民歸順，順天依時，大有所成。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 無交害，匪咎;艱則無咎。",
+        "image": {
+          "text": "",
+          "explanation": "大有初九，無交害也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 大車以載，有攸往，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "大車以載，積中不敗也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 公用，亨於天子，小人弗克。",
+        "image": {
+          "text": "",
+          "explanation": "公用亨於天子，小人害也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 匪其彭，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "匪其彭，無咎，明辯晰也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 厥孚交如，威如，吉。",
+        "image": {
+          "text": "",
+          "explanation": "厥孚交如，信以發志也;威如之吉，易而無備也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 自天祐之，吉無不利。",
+        "image": {
+          "text": "",
+          "explanation": "大有上吉，自天祐也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "name": "謙卦",
+    "chineseName": "地山謙",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "謙。",
+      "explanation": "亨，君子有終。"
+    },
+    "image": {
+      "text": "地中有山，謙。君子以裒多益寡，稱物平施。",
+      "explanation": "地中有山，謙。君子以裒多益寡，稱物平施。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上坤)相疊，艮為山，坤為地。地面有山，地卑(低)而山高，是為內高外低，比喻功高不自居，名高不自譽，位高不自傲。這就是謙。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 謙謙君子，用涉大川，吉。",
+        "image": {
+          "text": "",
+          "explanation": "謙謙君子，卑以自牧也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 鳴謙，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "鳴謙貞吉，中心得也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 勞謙，君子有終，吉。",
+        "image": {
+          "text": "",
+          "explanation": "勞謙君子，萬民服也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 無不利，撝謙。",
+        "image": {
+          "text": "",
+          "explanation": "無不利，撝謙，不違則也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 不富以其鄰，利用侵伐，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "利用侵伐，征不服也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 鳴謙，利用行師，征邑國。",
+        "image": {
+          "text": "",
+          "explanation": "鳴謙，志未得也;可用行師，征邑國也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "name": "豫卦",
+    "chineseName": "雷地豫",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "豫。",
+      "explanation": "利建侯行師。"
+    },
+    "image": {
+      "text": "雷出地奮，豫。先王以作樂崇德，殷薦之上帝，以配祖考。",
+      "explanation": "雷出地奮，豫。先王以作樂崇德，殷薦之上帝，以配祖考。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坤上震)相疊，坤為地，為順;震為雷，為動。雷依時出，預示大地回春。因順而動，和樂之源。此卦與謙卦互為綜卦，互動作用。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 鳴豫，凶。",
+        "image": {
+          "text": "",
+          "explanation": "初六鳴豫，志窮凶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 介於石，不終日，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "不終日，貞吉，以中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 盱豫，悔。 遲有悔。",
+        "image": {
+          "text": "",
+          "explanation": "盱豫有悔，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 由豫，大有得，勿疑，朋盍簪。",
+        "image": {
+          "text": "",
+          "explanation": "由豫大有得。志大行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 貞疾，恆不死。",
+        "image": {
+          "text": "",
+          "explanation": "六五貞疾，乘剛也。恆不死，中未亡也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 冥豫，成有渝，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "冥豫在上，何可長也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "name": "隨卦",
+    "chineseName": "澤雷隨",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "隨。",
+      "explanation": "元亨，利貞，無咎。"
+    },
+    "image": {
+      "text": "澤中有雷，隨。君子以向晦入宴息。",
+      "explanation": "澤中有雷，隨。君子以向晦入宴息。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上兌)相疊，震為雷，為動;兌為悅，動而悅就是“隨”。隨指相互順從，己有隨物，物能隨己，彼此溝通。隨必依時順勢，有原則和條件，以堅貞為前提。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 官有渝，貞吉。 出門交有功。",
+        "image": {
+          "text": "",
+          "explanation": "官有渝，從正吉也;出門交有功，不失也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 系小子，失丈夫。",
+        "image": {
+          "text": "",
+          "explanation": "系小子，弗兼與也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 系丈夫，失小子。隨有求，得，利居貞。",
+        "image": {
+          "text": "",
+          "explanation": "系丈夫，志舍下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 隨有獲，貞凶。有孚，在道以明，何咎?",
+        "image": {
+          "text": "",
+          "explanation": "隨有獲，其義凶也。有孚在道，明功也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 孚於嘉，吉。",
+        "image": {
+          "text": "",
+          "explanation": "孚於嘉吉，位正中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 拘系之，乃從維之;王用亨於西山。",
+        "image": {
+          "text": "",
+          "explanation": "拘系之，上窮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "name": "蠱卦",
+    "chineseName": "山風蠱",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "蠱。",
+      "explanation": "元亨，利涉大川。先甲三日，後甲三日。"
+    },
+    "image": {
+      "text": "山下有風，蠱。君子以振民育德。",
+      "explanation": "山下有風，蠱。君子以振民育德。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下巽上艮)相疊，與隨卦互為綜卦。蠱本意為事，引申為多事、混亂。器皿久不用而生蟲稱“蠱”，喻天下久安而因循、腐敗，必須革新創造，治理整頓，挽救危機，重振事業。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 幹父之蠱，有子，考無咎。厲，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "幹父之蠱，意承考也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 乾母之蠱，不可貞。",
+        "image": {
+          "text": "",
+          "explanation": "乾母之蠱，得中道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 幹父之蠱，小有悔，無大咎。",
+        "image": {
+          "text": "",
+          "explanation": "幹父之蠱，終無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 裕父之蠱，往見吝。",
+        "image": {
+          "text": "",
+          "explanation": "裕父之蠱，往未得也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 幹父之蠱，用譽。",
+        "image": {
+          "text": "",
+          "explanation": "幹父之蠱，承以德也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 不事王侯，高尚其事。",
+        "image": {
+          "text": "",
+          "explanation": "不事王侯，志可則也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "name": "臨卦",
+    "chineseName": "地澤臨",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "臨。",
+      "explanation": "元亨利貞。至於八月有凶。"
+    },
+    "image": {
+      "text": "澤上有地，臨。君子以教思無窮，客保民無疆。",
+      "explanation": "澤上有地，臨。君子以教思無窮，客保民無疆。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上坤)相疊。坤為地，兌為澤，地高於澤，澤容於地。喻君主親臨天下，治國安邦，上下融洽。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 鹹臨，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "鹹臨貞吉，志行正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 鹹臨，吉，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "鹹臨，吉無不利，未順命也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 甘臨，無攸利。即憂之，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "甘臨，位不當也。即憂之，咎不長也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 至臨，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "至臨無咎，位當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 知臨，大君之宜，吉。",
+        "image": {
+          "text": "",
+          "explanation": "大君之宜，行中之謂也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 敦臨，吉，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "敦臨之吉，志在內也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "name": "觀卦",
+    "chineseName": "風地觀",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "觀。",
+      "explanation": "盥而不薦，有孚顒若。"
+    },
+    "image": {
+      "text": "風行地上，觀。先王以省方觀民設教。",
+      "explanation": "風行地上，觀。先王以省方觀民設教。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坤上巽)相疊，風行地上，喻德教遍施。觀卦與臨卦互為綜卦，交相使用。在上者以道義觀天下;在下者以敬仰瞻上，人心順服歸從。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 童觀，小人無咎，君子吝。",
+        "image": {
+          "text": "",
+          "explanation": "初六童觀，小人道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 窺觀，利女貞。",
+        "image": {
+          "text": "",
+          "explanation": "窺觀女貞，亦可醜也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 觀我生，進退。",
+        "image": {
+          "text": "",
+          "explanation": "觀我生進退，未失道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 觀國之光，利用賓於王。",
+        "image": {
+          "text": "",
+          "explanation": "觀國之光，尚賓也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 觀我生，君子無咎。",
+        "image": {
+          "text": "",
+          "explanation": "觀我生，觀民也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 觀其生，君子無咎。",
+        "image": {
+          "text": "",
+          "explanation": "觀其生，志未平也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "name": "噬嗑卦",
+    "chineseName": "火雷噬嗑",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "噬嗑。",
+      "explanation": "亨。利用獄。"
+    },
+    "image": {
+      "text": "雷電噬嗑。先王以明罰敕法。",
+      "explanation": "雷電噬嗑。先王以明罰敕法。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上離)相疊。離為陰卦;震為陽卦。陰陽相交，咬碎硬物，喻恩威並施，寬嚴結合，剛柔相濟。噬嗑為上下顎咬合，咀嚼。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 屨校滅趾，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "屨校滅趾，不行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 噬膚滅鼻，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "噬膚滅鼻，乘剛也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 噬臘肉，遇毒。小吝，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "遇毒，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 噬乾胏，得金矢。利艱貞，吉。",
+        "image": {
+          "text": "",
+          "explanation": "利艱貞吉，未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 噬乾肉，得黃金。貞厲，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "貞厲無咎，得當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 何校滅耳，凶。",
+        "image": {
+          "text": "",
+          "explanation": "何校滅耳，聰不明也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "name": "賁卦",
+    "chineseName": "山火賁",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "賁。",
+      "explanation": "亨。小利有攸往。"
+    },
+    "image": {
+      "text": "山下有火，賁。君子以明庶政，無敢折獄。",
+      "explanation": "山下有火，賁。君子以明庶政，無敢折獄。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上艮)相疊。離為火為明;艮為山為止。文明而有節制。賁卦論述文與質的關係，以質為主，以文調節。賁，文飾、修飾。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 賁其趾，舍車而徒。",
+        "image": {
+          "text": "",
+          "explanation": "舍車而徒，義弗乘也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 賁其須。",
+        "image": {
+          "text": "",
+          "explanation": "賁其須，與上興也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 賁如，濡如，永貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "永貞之吉，終莫之陵也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 賁如，皤如，白馬翰如，匪寇婚媾。",
+        "image": {
+          "text": "",
+          "explanation": "六四當位疑也。匪寇婚媾，終無尤也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 賁於丘園，束帛戔戔。吝，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "六五之吉，有喜也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 白賁，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "白賁無咎，上得志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "name": "剝卦",
+    "chineseName": "山地剝",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "剝。",
+      "explanation": "不利有攸往。"
+    },
+    "image": {
+      "text": "山附於地，剝。上以厚下安宅。",
+      "explanation": "山附於地，剝。上以厚下安宅。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坤上艮)相疊。五陰在下，一陽在上，陰盛而陽孤;高山附於地。二者都是剝落象，故為“剝卦”。此卦陰盛陽衰，喻小人得勢，君子困頓，事業敗壞。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 剝床以足，蔑貞，凶。",
+        "image": {
+          "text": "",
+          "explanation": "剝床以足，以滅下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 剝床以辨，蔑貞，凶。",
+        "image": {
+          "text": "",
+          "explanation": "剝床以辨，未有與也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 剝之，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "剝之無咎，失上下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 剝床以膚，凶。",
+        "image": {
+          "text": "",
+          "explanation": "剝床以膚，切近災也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 貫魚，以宮人寵，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "以宮人寵，終無尤也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 碩果不食，君子得輿，小人剝廬。",
+        "image": {
+          "text": "",
+          "explanation": "君子得輿，民所載也;小人剝廬，終不可用也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "name": "復卦",
+    "chineseName": "地雷復",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "復。",
+      "explanation": "亨。出入無疾，朋來無咎。反覆其道，七日來復，利有攸往。"
+    },
+    "image": {
+      "text": "雷在地中，復。先王以至日閉關，商旅不行，後不省方。",
+      "explanation": "雷在地中，復。先王以至日閉關，商旅不行，後不省方。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上坤)相疊。震為雷、為動;坤為地、為順，動則順，順其自然。動在順中，內陽外陰，循序運動，進退自如，利於前進。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 不遠復，無祇悔，元吉。",
+        "image": {
+          "text": "",
+          "explanation": "不遠之復，以修身也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 休復，吉。",
+        "image": {
+          "text": "",
+          "explanation": "休復之吉，以下仁也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 頻復，厲，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "頻復之厲，義無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 中行獨復。",
+        "image": {
+          "text": "",
+          "explanation": "中行獨復，以從道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 敦復，無悔。",
+        "image": {
+          "text": "",
+          "explanation": "敦復無悔，中以自考也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 迷復，凶，有災眚。用行師，終有大敗，以其國君凶，至於十年不克征。",
+        "image": {
+          "text": "",
+          "explanation": "迷復之凶，反君道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "name": "無妄卦",
+    "chineseName": "天雷無妄",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "無妄。",
+      "explanation": "元亨利貞。其匪正有眚，不利有攸往。"
+    },
+    "image": {
+      "text": "天下雷行，物與無妄。先王以茂對時，育萬物。",
+      "explanation": "天下雷行，物與無妄。先王以茂對時，育萬物。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上乾)相疊。乾為天為剛為健;震為雷為剛為動。動而健，剛陽盛，人心振奮，必有所得，但唯循純正，不可妄行。無妄必有獲，必可致福。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 無妄，往吉。",
+        "image": {
+          "text": "",
+          "explanation": "無妄之往，得志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 不耕穫，不菑畲，則利有攸往。",
+        "image": {
+          "text": "",
+          "explanation": "不耕穫，未富也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 無妄之災。或系之牛，行人之得，邑人之災。",
+        "image": {
+          "text": "",
+          "explanation": "行人得牛，邑人災也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 可貞，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "可貞無咎，固有之也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 無妄之疾，勿藥有喜。",
+        "image": {
+          "text": "",
+          "explanation": "無妄之藥，不可試也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 無妄，行有眚，無攸利。",
+        "image": {
+          "text": "",
+          "explanation": "無妄之行，窮之災也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "name": "大畜卦",
+    "chineseName": "山天大畜",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "大畜。",
+      "explanation": "利貞，不家食，吉。利涉大川。"
+    },
+    "image": {
+      "text": "天在山中，大畜。君子以多識前言往行，以畜其德。",
+      "explanation": "天在山中，大畜。君子以多識前言往行，以畜其德。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上艮)相疊。乾為天，剛健;艮為山，篤實。畜者積聚，大畜意為大積蓄。為此不畏嚴重的艱難險阻，努力修身養性以豐富德業。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 有厲，利已。",
+        "image": {
+          "text": "",
+          "explanation": "有厲利已，不犯災也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 輿說輹。",
+        "image": {
+          "text": "",
+          "explanation": "輿說輹，中無尤也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 良馬逐，利艱貞。曰閒輿衛，利有攸往。",
+        "image": {
+          "text": "",
+          "explanation": "利有攸往，上合志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 童牛之牿，元吉。",
+        "image": {
+          "text": "",
+          "explanation": "六四元吉，有喜也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 豶豕之牙，吉。",
+        "image": {
+          "text": "",
+          "explanation": "六五之吉，有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 何天之衢，亨。",
+        "image": {
+          "text": "",
+          "explanation": "何天之衢，道大行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 27,
+    "name": "頤卦",
+    "chineseName": "山雷頤",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "頤。",
+      "explanation": "貞吉。觀頤，自求口實。"
+    },
+    "image": {
+      "text": "山下有雷，頤。君子以慎言語，節飲食。",
+      "explanation": "山下有雷，頤。君子以慎言語，節飲食。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上艮)相疊。震為雷，艮為山。山在上而雷在下，外實內虛。春暖萬物養育，依時養賢育民。陽實陰虛，實者養人，虛者為人養。自食其力。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 舍爾靈龜，觀我朵頤，凶。",
+        "image": {
+          "text": "",
+          "explanation": "觀我朵頤，亦不足貴也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 顛頤，拂經;於丘頤，征凶。",
+        "image": {
+          "text": "",
+          "explanation": "六二征凶，行失類也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 拂頤，貞凶。十年勿用，無攸利。",
+        "image": {
+          "text": "",
+          "explanation": "十年勿用，道大悖也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 顛頤，吉。虎視眈眈，其欲逐逐，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "顛頤之吉，上施光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 拂經，居貞吉。不可涉大川。",
+        "image": {
+          "text": "",
+          "explanation": "居貞之吉，順以從上也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 由頤，厲吉。利涉大川。",
+        "image": {
+          "text": "",
+          "explanation": "由頤厲吉，大有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "name": "大過卦",
+    "chineseName": "澤風大過",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "大過。",
+      "explanation": "棟橈。利有攸往，亨。"
+    },
+    "image": {
+      "text": "澤滅木，大過。君子以獨立不懼，遁世無悶。",
+      "explanation": "澤滅木，大過。君子以獨立不懼，遁世無悶。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下巽上兌)相疊。兌為澤、為悅，巽為木、為順，澤水淹舟，遂成大錯。陰陽爻相反，陽大陰小，行動非常，有過度形象，內剛外柔。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 藉用白茅，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "藉用白茅，柔在下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 枯楊生稊，老夫得其女妻，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "老夫女妻，過以相與也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 棟橈，凶。",
+        "image": {
+          "text": "",
+          "explanation": "棟橈之凶，不可以有輔也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 棟隆，吉。有它吝。",
+        "image": {
+          "text": "",
+          "explanation": "棟隆之吉，不橈乎下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 枯楊生花，老婦得其士夫，無咎無譽。",
+        "image": {
+          "text": "",
+          "explanation": "枯楊生花，何可久也。老婦土夫，亦可醜也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 過涉滅頂，凶，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "過涉之凶，不可咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "name": "坎卦",
+    "chineseName": "坎為水",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "習坎。",
+      "explanation": "有孚，維心亨，行有尚。"
+    },
+    "image": {
+      "text": "水洊至，習坎。君子以常德行，習教事。",
+      "explanation": "水洊至，習坎。君子以常德行，習教事。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下坎上坎)相疊。坎為水、為險，兩坎相重，險上加險，險阻重重。一陽陷二陰。所幸陰虛陽實，誠信可豁然貫通。雖險難重重，卻方能顯人性光彩。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 習坎，入於坎窞。凶。",
+        "image": {
+          "text": "",
+          "explanation": "習坎入坎，失道凶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 坎有險，求小得。",
+        "image": {
+          "text": "",
+          "explanation": "求小得，未出中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 來之坎坎，險且枕，入於坎窞，勿用。",
+        "image": {
+          "text": "",
+          "explanation": "來之坎坎，終無功也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 樽酒簋貳，用缶，納約自牖，終無咎。",
+        "image": {
+          "text": "",
+          "explanation": "樽酒簋貳，剛柔際也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 坎不盈，祗既平，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "坎不盈，中未大也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 系用徵纆，寘於叢棘，三歲不得，凶。",
+        "image": {
+          "text": "",
+          "explanation": "上六失道，凶三歲也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "name": "離卦",
+    "chineseName": "離為火",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "離。",
+      "explanation": "利貞，亨。畜牝牛，吉。"
+    },
+    "image": {
+      "text": "明兩作，離。大人以繼明照四方。",
+      "explanation": "明兩作，離。大人以繼明照四方。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下離上離)相疊。離者麗也，附著之意，一陰附麗，上下二陽，該卦象徵火，內空外明。離為火、為明，太陽反覆升落，運行不息，柔順為心。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 履錯然，敬之，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "履錯之敬，以辟咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 黃離，元吉。",
+        "image": {
+          "text": "",
+          "explanation": "黃離元吉，得中道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 日昃之離。不鼓缶而歌，則大耋之嗟，凶。",
+        "image": {
+          "text": "",
+          "explanation": "日昃之離，何可久也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 突如其來如，焚如，死如，棄如。",
+        "image": {
+          "text": "",
+          "explanation": "突如其來如，無所容也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 出涕沱若，戚嗟若，吉。",
+        "image": {
+          "text": "",
+          "explanation": "六五之吉，離王公也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 王用出征，有嘉。折首，獲匪其醜，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "王用出征，以正邦也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "name": "鹹卦",
+    "chineseName": "澤山鹹",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "鹹。",
+      "explanation": "亨，利貞。取女吉。"
+    },
+    "image": {
+      "text": "山上有澤，鹹。君子以虛受人。",
+      "explanation": "山上有澤，鹹。君子以虛受人。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上兌)相疊。艮為山;澤為水。兌柔在上，艮剛在下，水向下滲，柔上而剛下，交相感應。感則成。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 鹹其拇。",
+        "image": {
+          "text": "",
+          "explanation": "鹹其拇，志在外也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 鹹其腓，凶，居吉。",
+        "image": {
+          "text": "",
+          "explanation": "雖凶居吉，順不害也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 鹹其股，執其隨，往吝。",
+        "image": {
+          "text": "",
+          "explanation": "鹹其股，亦不處也。志在隨人，所執下也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 貞吉悔亡，憧憧往來，朋從爾思。",
+        "image": {
+          "text": "",
+          "explanation": "貞吉悔亡，未感害也。憧憧往來，未光大也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 鹹其脢，無悔。",
+        "image": {
+          "text": "",
+          "explanation": "鹹其脢，志末也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 鹹其輔、頰、舌。",
+        "image": {
+          "text": "",
+          "explanation": "鹹其輔頰舌，滕口說也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 32,
+    "name": "恆卦",
+    "chineseName": "雷風恆",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "恆。",
+      "explanation": "亨，無咎，利貞。利有攸往。"
+    },
+    "image": {
+      "text": "雷風恆。君子以立不易方。",
+      "explanation": "雷風恆。君子以立不易方。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下巽上震)相疊。震為男、為雷;巽為女、為風。震剛在上，巽柔在下。剛上柔下，造化有常，相互助長。陰陽相應，常情，故稱為恆。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 浚恆，貞凶，無攸利。",
+        "image": {
+          "text": "",
+          "explanation": "浚恆之凶，始求深也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "九二悔亡，能久中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 不恆其德，或承之羞，貞吝。",
+        "image": {
+          "text": "",
+          "explanation": "不恆其德，無所容也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 田無禽。",
+        "image": {
+          "text": "",
+          "explanation": "久非其位，安得禽也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 恆其德，貞。婦人吉，夫子凶。",
+        "image": {
+          "text": "",
+          "explanation": "婦人貞吉，從一而終也。夫子制義，從婦凶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 振恆，凶。",
+        "image": {
+          "text": "",
+          "explanation": "振恆在上，大無功也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 33,
+    "name": "遁卦",
+    "chineseName": "天山遁",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "遁。",
+      "explanation": "亨。小利貞。"
+    },
+    "image": {
+      "text": "天下有山，遁。君子以遠小人，不惡而嚴。",
+      "explanation": "天下有山，遁。君子以遠小人，不惡而嚴。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上乾)相疊。乾為天，艮為山。天下有山，山高天退。陰長陽消，小人得勢，君子退隱，明哲保身，伺機救天下。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 遁尾，厲。勿用有攸往。",
+        "image": {
+          "text": "",
+          "explanation": "遁尾之厲，不往何災也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 執之用黃牛之革，莫之勝說。",
+        "image": {
+          "text": "",
+          "explanation": "執用黃牛，固志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 系遁，有疾厲。畜臣妾，吉。",
+        "image": {
+          "text": "",
+          "explanation": "系遁之厲，有疾憊也。畜臣妾吉，不可大事也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 好遁，君子吉，小人否。",
+        "image": {
+          "text": "",
+          "explanation": "君子好遁，小人否也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 嘉遁，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "嘉遁貞吉，以正志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 肥遁，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "肥遁無不利，無所疑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 34,
+    "name": "大壯卦",
+    "chineseName": "雷天大壯",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "大壯。",
+      "explanation": "利貞。"
+    },
+    "image": {
+      "text": "雷在天上，大壯。君子以非禮弗履。",
+      "explanation": "雷在天上，大壯。君子以非禮弗履。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上震)相疊。震為雷;乾為天。乾剛震動。天鳴雷，雲雷滾，聲勢宏大，陽氣盛壯，萬物生長。剛壯有力故曰壯。大而且壯，故名大壯。四陽壯盛，積極而有所作為，上正下正，標正影直。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 壯於趾，征凶，有孚。",
+        "image": {
+          "text": "",
+          "explanation": "壯於趾，其孚窮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "九二貞吉，以中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 小人用壯，君子用罔;貞厲，羝羊觸藩，羸其角。",
+        "image": {
+          "text": "",
+          "explanation": "小人用壯，君子罔也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 貞吉，悔亡;藩決不羸，壯於大輿之輹。",
+        "image": {
+          "text": "",
+          "explanation": "藩決不羸，尚往也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 喪羊於易，無悔。",
+        "image": {
+          "text": "",
+          "explanation": "喪羊於易，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 羝羊觸藩，不能退，不能遂，無攸利。艱則吉。",
+        "image": {
+          "text": "",
+          "explanation": "不能退，不能遂，不詳也;艱則吉，咎不長也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "name": "晉卦",
+    "chineseName": "火地晉",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "晉。",
+      "explanation": "康侯用錫馬蕃庶，晝日三接。"
+    },
+    "image": {
+      "text": "明出地上，晉。君子以自昭明德。",
+      "explanation": "明出地上，晉。君子以自昭明德。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坤上離)相疊。離為日，為光明;坤為地。太陽高懸，普照大地，大地卑順，萬物生長，光明磊落，柔進上行，喻事業蒸蒸日上。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 晉如，摧如，貞吉。罔孚，裕，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "晉如摧如，獨行正也。裕無咎，未受命也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 晉如，愁如，貞吉。受茲介福，於其王母。",
+        "image": {
+          "text": "",
+          "explanation": "受茲介福，以中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 眾允，悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "眾允之志，上行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 晉如鼫鼠，貞厲。",
+        "image": {
+          "text": "",
+          "explanation": "鼫鼠貞厲，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 悔亡，失得勿恤，往吉，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "失得勿恤，往有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 晉其角，維用伐邑，厲吉無咎，貞吝。",
+        "image": {
+          "text": "",
+          "explanation": "維用伐邑，道未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "name": "明夷卦",
+    "chineseName": "地火明夷",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "明夷。",
+      "explanation": "利艱貞。"
+    },
+    "image": {
+      "text": "明入地中，明夷。君子以蒞眾用晦而明。",
+      "explanation": "明入地中，明夷。君子以蒞眾用晦而明。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上坤)相疊。離為明，坤為順;離為日;坤為地。日沒入地，光明受損，前途不明，環境困難，宜遵時養晦，堅守正道，外愚內慧，韜光養晦。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 明夷于飛，垂其翼。君子於行，三日不食。有攸往，主人有言。",
+        "image": {
+          "text": "",
+          "explanation": "君子於行，義不食也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 明夷，夷於左股，用拯馬壯，吉。",
+        "image": {
+          "text": "",
+          "explanation": "六二之吉，順以則也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 明夷於南狩，得其大首，不可疾，貞。",
+        "image": {
+          "text": "",
+          "explanation": "南狩之志，乃大得也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 入於左腹，獲明夷之心，於出門庭。",
+        "image": {
+          "text": "",
+          "explanation": "入於左腹，獲心意也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 箕子之明夷，利貞。",
+        "image": {
+          "text": "",
+          "explanation": "箕子之貞，明不可息也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 不明，晦。初登於天，後入於地。",
+        "image": {
+          "text": "",
+          "explanation": "初登於天，照四國也;後入於地，失則也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "name": "家人卦",
+    "chineseName": "風火家人",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "家人。",
+      "explanation": "利女貞。"
+    },
+    "image": {
+      "text": "風自火出，家人。君子以言有物而行有恆。",
+      "explanation": "風自火出，家人。君子以言有物而行有恆。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上巽)相疊。離為火;巽為風。火使熱氣上升，成為風。一切事物皆應以內在為本，然後伸延到外。發生於內，形成於外。喻先治家而後治天下，家道正，天下安樂。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 閒有家，悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "閒有家，志未變也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 無攸遂，在中饋，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "六二之吉，順以巽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 家人嗃嗃，悔厲，吉;婦子嘻嘻，終吝。",
+        "image": {
+          "text": "",
+          "explanation": "家人嗃嗃，未失也;婦子嘻嘻，失家節也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 富家，大吉。",
+        "image": {
+          "text": "",
+          "explanation": "富家大吉，順在位也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 王假有家，勿恤，吉。",
+        "image": {
+          "text": "",
+          "explanation": "王假有家，交相愛也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 有孚威如，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "威如之吉，反身之謂也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 38,
+    "name": "睽卦",
+    "chineseName": "火澤睽",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "睽。",
+      "explanation": "小事吉。"
+    },
+    "image": {
+      "text": "上火下澤，睽。君子以同而異。",
+      "explanation": "上火下澤，睽。君子以同而異。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上離)相疊。離為火;兌為澤。上火下澤，相違不相濟。克則生，往復無空。萬物有所不同，必有所異，相互矛盾。睽即矛盾。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 悔亡，喪馬勿逐，自復。見惡人，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "見惡人，以辟咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 遇主於巷，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "遇主於巷，未失道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 見輿曳，其牛掣。其人天且劓，無初有終。",
+        "image": {
+          "text": "",
+          "explanation": "見輿曳，位不當也;無初有終，遇剛也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 睽孤，遇元夫。交孚，厲無咎。",
+        "image": {
+          "text": "",
+          "explanation": "交孚無咎，志行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 悔亡，厥宗噬膚，往何咎?",
+        "image": {
+          "text": "",
+          "explanation": "厥宗噬膚，往有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 睽孤，見豕負塗，載鬼一車。先張之弧，後說之弧，匪寇婚媾。往遇雨則吉。",
+        "image": {
+          "text": "",
+          "explanation": "遇雨之吉，群疑亡也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 39,
+    "name": "蹇卦",
+    "chineseName": "水山蹇",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "蹇。",
+      "explanation": "利西南，不利東北。利見大人，貞吉。"
+    },
+    "image": {
+      "text": "山上有水，蹇。君子以反身修德。",
+      "explanation": "山上有水，蹇。君子以反身修德。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上坎)相疊。坎為水，艮為山。山高水深，困難重重，人生險阻，見險而止，明哲保身，可謂智慧。蹇，跋行艱難。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 往蹇來譽。",
+        "image": {
+          "text": "",
+          "explanation": "往蹇來譽，宜待也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 王臣蹇蹇，匪躬之故。",
+        "image": {
+          "text": "",
+          "explanation": "王臣蹇蹇，終無尤也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 往蹇來反。",
+        "image": {
+          "text": "",
+          "explanation": "往蹇來反，內喜之也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 往蹇來連。",
+        "image": {
+          "text": "",
+          "explanation": "往蹇來連，當位實也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 大蹇，朋來。",
+        "image": {
+          "text": "",
+          "explanation": "大蹇朋來，以中節也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 往蹇來碩，吉。利見大人。",
+        "image": {
+          "text": "",
+          "explanation": "往蹇來碩，志在內也;利見大人，以從貴也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 40,
+    "name": "解卦",
+    "chineseName": "雷水解",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "解。",
+      "explanation": "利西南。無所往，其來復吉。有攸往，夙吉。"
+    },
+    "image": {
+      "text": "雷雨作，解。君子以赦過宥罪。",
+      "explanation": "雷雨作，解。君子以赦過宥罪。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上震)相疊。震為雷、為動;坎為水、為險。險在內，動在外。嚴冬天地閉塞，靜極而動。萬象更新，冬去春來，一切消除，是為解。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 無咎。",
+        "image": {
+          "text": "",
+          "explanation": "剛柔之際，義無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 田獲三狐，得黃矢，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "九二貞吉，得中道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 負且乘，致寇至，貞吝。",
+        "image": {
+          "text": "",
+          "explanation": "負且乘，亦可醜也;自我致戎，又誰咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 解而拇，朋至斯孚。",
+        "image": {
+          "text": "",
+          "explanation": "解而拇，未當位也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 君子維有解，吉，有孚於小人。",
+        "image": {
+          "text": "",
+          "explanation": "君子有解，小人退也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 公用射隼於高墉之上，獲之無不利。",
+        "image": {
+          "text": "",
+          "explanation": "公用射隼，以解悖也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 41,
+    "name": "損卦",
+    "chineseName": "山澤損",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "損。",
+      "explanation": "有孚，元吉，無咎，可貞。利有攸往。曷之用?二簋可用享。"
+    },
+    "image": {
+      "text": "山下有澤，損。君子以征忿窒慾。",
+      "explanation": "山下有澤，損。君子以征忿窒慾。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上艮)相疊。艮為山;兌為澤。上山下澤，大澤浸蝕山根。損益相間，損中有益，益中有損。二者之間，不可不慎重對待。損下益上，治理國家，過度會損傷國基。應損則損，但必量力、適度。少損而益最佳。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 已事遄往，無咎，酌損之。",
+        "image": {
+          "text": "",
+          "explanation": "已事遄往，尚合志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 利貞，征凶。弗損，益之。",
+        "image": {
+          "text": "",
+          "explanation": "九二利貞，中以為志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 三人行則損一人;一人行則得其友。",
+        "image": {
+          "text": "",
+          "explanation": "一人行，三則疑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 損其疾，使遄有喜，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "損其疾，亦可喜也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 或益之十朋之龜，弗克違。元吉。",
+        "image": {
+          "text": "",
+          "explanation": "六五元吉，自上佑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 弗損，益之，無咎。貞吉。 利有攸往，得臣無家。",
+        "image": {
+          "text": "",
+          "explanation": "弗損益之，大得志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 42,
+    "name": "益卦",
+    "chineseName": "風雷益",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "益。",
+      "explanation": "利有攸往，利涉大川。"
+    },
+    "image": {
+      "text": "風雷，益。君子以見善則遷，有過則改。",
+      "explanation": "風雷，益。君子以見善則遷，有過則改。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下震上巽)相疊。巽為風;震為雷。風雷激盪，其勢愈強，雷愈響，風雷相助互長，交相助益。此卦與損卦相反。它是損上以益下，後者是損下以益上。二卦闡述的是損益的原則。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 利用為大作，元吉，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "元吉無咎，下不厚事也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 或益之十朋之龜，弗克違，永貞吉。王用享於帝，吉。",
+        "image": {
+          "text": "",
+          "explanation": "或益之，自外來也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 益之用凶事，無咎。有孚中行，告公用圭。",
+        "image": {
+          "text": "",
+          "explanation": "益用凶事，固有之也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 中行，告公從。利用為依遷國。",
+        "image": {
+          "text": "",
+          "explanation": "告公從，以益志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 有孚惠心，勿問元吉。有孚惠我德。",
+        "image": {
+          "text": "",
+          "explanation": "有孚惠心，勿問之矣。惠我德，大得志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 莫益之，或擊之，立心勿恆，凶。",
+        "image": {
+          "text": "",
+          "explanation": "莫益之，偏辭也。或擊之，自外來也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 43,
+    "name": "夬卦",
+    "chineseName": "澤天夬",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "夬。",
+      "explanation": "揚於王庭，孚號有厲。告自邑，不利即戎，利有攸往。"
+    },
+    "image": {
+      "text": "澤上於天，夬。君子以施祿及下，居德則忌。",
+      "explanation": "澤上於天，夬。君子以施祿及下，居德則忌。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下乾上兌)相疊。乾為天為健;兌為澤為悅。澤氣上升，決注成雨，雨施大地，滋潤萬物。五陽去一陰，去之不難，決(去之意)即可，故名為夬(guài)，夬即決。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 壯於前趾，往不勝為咎。",
+        "image": {
+          "text": "",
+          "explanation": "不勝而往，咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 惕號，莫夜有戎，勿恤。",
+        "image": {
+          "text": "",
+          "explanation": "有戎勿恤，得中道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 壯於頄，有凶。君子夬夬獨行，遇雨若濡，有慍，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "君子夬夬，終無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 臀無膚，其行次且。牽羊悔亡，聞言不信。",
+        "image": {
+          "text": "",
+          "explanation": "其行次且，位不當也;聞言不信，聰不明也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 莧陸夬夬，中行無咎。",
+        "image": {
+          "text": "",
+          "explanation": "中行無咎，中未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 無號，終有凶。",
+        "image": {
+          "text": "",
+          "explanation": "無號之凶，終不可長也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 44,
+    "name": "姤卦",
+    "chineseName": "天風姤",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "姤。",
+      "explanation": "女壯，勿用取女。"
+    },
+    "image": {
+      "text": "天下有風，姤。後以施命誥四方。",
+      "explanation": "天下有風，姤。後以施命誥四方。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下巽上乾)相疊。乾為天，巽為風。天下有風，吹遍大地，陰陽交合，萬物茂盛。姤(gǒu)卦與夬卦相反，互為“綜卦”。姤即媾，陰陽相遇。但五陽一陰，不能長久相處。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 繫於金柅，貞吉。有攸往，見凶。羸豕孚蹢躅。",
+        "image": {
+          "text": "",
+          "explanation": "繫於金柅，柔道牽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 包有魚，無咎，不利賓。",
+        "image": {
+          "text": "",
+          "explanation": "包有魚，義不及賓也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 臀無膚，其行次且。厲，無大咎。",
+        "image": {
+          "text": "",
+          "explanation": "其行次且，行未牽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 包無魚，起凶。",
+        "image": {
+          "text": "",
+          "explanation": "無魚之凶，遠民也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 以杞包瓜，含章，有隕自天。",
+        "image": {
+          "text": "",
+          "explanation": "九五含章，中正也;有隕自天，志不捨命也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 姤其角，吝，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "姤其角，上窮吝也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 45,
+    "name": "萃卦",
+    "chineseName": "澤地萃",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "萃。",
+      "explanation": "亨，王假有廟。利見大人，亨，利貞。用大牲吉。利有攸往。"
+    },
+    "image": {
+      "text": "澤上於地，萃。君子以除戎器，戒不虞。",
+      "explanation": "澤上於地，萃。君子以除戎器，戒不虞。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦相疊(下坤上兌)。坤為地、為順;兌為澤、為水。澤泛濫淹沒大地，人眾多相互鬥爭，危機必四伏，務必順天任賢，未雨綢繆，柔順而又和悅，彼此相得益彰，安居樂業。萃，聚集、團結。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 有孚不終，乃亂乃萃。若號，一握為笑。勿恤，往無咎",
+        "image": {
+          "text": "",
+          "explanation": "乃亂乃萃，其志亂也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 引吉，無咎。孚乃利用禴。",
+        "image": {
+          "text": "",
+          "explanation": "引吉無咎，中未變也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 萃如，嗟如，無攸利。往無咎，小吝。",
+        "image": {
+          "text": "",
+          "explanation": "往無咎，上巽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 大吉，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "大吉無咎，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 萃有位，無咎。匪孚，元永貞，悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "萃有位，志未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 齎咨涕洟，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "齎咨涕洟，未安上也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 46,
+    "name": "升卦",
+    "chineseName": "地風升",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "升。",
+      "explanation": "元亨。用見大人，勿恤，南征吉。"
+    },
+    "image": {
+      "text": "地中生木，升。君子以順德，積小以高大。",
+      "explanation": "地中生木，升。君子以順德，積小以高大。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦相疊(下巽上坤)。坤為地、為順;巽為木、為遜。大地生長樹木，逐的成長，日漸高大成材，喻事業步步高升，前程遠大，故名“升”。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 允升，大吉。",
+        "image": {
+          "text": "",
+          "explanation": "允升大吉，上合志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 孚乃利用禴，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "九二之孚，有喜也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 升虛邑。",
+        "image": {
+          "text": "",
+          "explanation": "升虛邑，無所疑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 王用亨於岐山，吉，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "王用亨於岐山，順事也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 貞吉，升階。",
+        "image": {
+          "text": "",
+          "explanation": "貞吉升階，大得志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 冥升，利於不息之貞。",
+        "image": {
+          "text": "",
+          "explanation": "冥升在上，消不富也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 47,
+    "name": "困卦",
+    "chineseName": "澤水困",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "困。",
+      "explanation": "亨，貞，大人吉，無咎。有言不信。"
+    },
+    "image": {
+      "text": "澤無水，困。君子以致命遂志。",
+      "explanation": "澤無水，困。君子以致命遂志。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上兌)相疊。兌為陰為澤喻悅;坎為陽為水喻險。澤水困，陷入困境，才智難以施展，仍堅守正道，自得其樂，必可成事，擺脫困境。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 臀困於株木，入於幽谷，三歲不覿。",
+        "image": {
+          "text": "",
+          "explanation": "入於幽谷，幽不明也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 困於灑食，朱紱方來，利用享祀。征凶，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "困於灑食，中有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 困於石，據於疾藜。入於其宮，不見其妻，凶。",
+        "image": {
+          "text": "",
+          "explanation": "據於疾藜，乘剛也;入於其宮，不見其妻，不祥也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 來徐徐，困於金車，吝，有終。",
+        "image": {
+          "text": "",
+          "explanation": "來徐徐，志在下也。雖不當位，有與也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 劓刖，困於赤紱。乃徐，有說，利用祭祀。",
+        "image": {
+          "text": "",
+          "explanation": "劓刖，志未得也。乃徐有說，以中直也。利用祭祀，受福也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 困於葛藟，於臲卼，曰動悔。有悔，征吉。",
+        "image": {
+          "text": "",
+          "explanation": "困於葛藟，未當也。動悔有悔，吉行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 48,
+    "name": "井卦",
+    "chineseName": "水風井",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "井。",
+      "explanation": "改邑不改井，無喪無得。往來井井。汔至亦未繘井，羸其瓶，凶。"
+    },
+    "image": {
+      "text": "木上有水，井。君子以勞民勸相。",
+      "explanation": "木上有水，井。君子以勞民勸相。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下巽上坎)相疊。坎為水;巽為木。樹木得水而蓬勃生長。人靠水井生活，水井由人挖掘而成。相互為養，井以水養人，經久不竭，人應取此德而勤勞自勉。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 井泥不食，舊井無禽。",
+        "image": {
+          "text": "",
+          "explanation": "井泥不食，下也。舊井無禽，時舍也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 井谷射鮒，瓮敝漏。",
+        "image": {
+          "text": "",
+          "explanation": "井谷射鮒，無與也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 井渫不食，為我心惻。可用汲，王明，並受其福。",
+        "image": {
+          "text": "",
+          "explanation": "井渫不食，行惻也。求王明，受福也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 井甃，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "井甃無咎，修井也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 井冽寒泉，食。",
+        "image": {
+          "text": "",
+          "explanation": "寒泉之食，中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 井收勿幕，有孚元吉。",
+        "image": {
+          "text": "",
+          "explanation": "元吉在上，大成也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 49,
+    "name": "革卦",
+    "chineseName": "澤火革",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "革。",
+      "explanation": "己日乃孚。元亨利貞。悔亡。"
+    },
+    "image": {
+      "text": "澤中有火，革。君子以治歷明時。",
+      "explanation": "澤中有火，革。君子以治歷明時。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上兌)相疊。離為火、兌為澤，澤內有水。水在上而下澆，火在下而上升。火旺水乾;水大火熄。二者相生亦相剋，必然出現變革。變革是宇宙的基本規律。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 鞏用黃牛之革。",
+        "image": {
+          "text": "",
+          "explanation": "鞏用黃牛，不可以有為也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 己日乃革之。征吉，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "己日革之，行有嘉也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 征凶貞厲。革言三就，有孚。",
+        "image": {
+          "text": "",
+          "explanation": "革言三就，又何之矣?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 悔亡，有孚，改命，吉。",
+        "image": {
+          "text": "",
+          "explanation": "改命之吉，信志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 大人虎變，未占有孚。",
+        "image": {
+          "text": "",
+          "explanation": "大人虎變，其文炳也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 君子豹變，小人革面。征凶，居貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "君子豹變，其文蔚也。小人革面，順以從君也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 50,
+    "name": "鼎卦",
+    "chineseName": "火風鼎",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "鼎。",
+      "explanation": "元吉，亨。"
+    },
+    "image": {
+      "text": "木上有火，鼎。君子以正位凝命。",
+      "explanation": "木上有火，鼎。君子以正位凝命。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下巽上離)相疊。燃木煮食，化生為熟，除舊布新的意思。鼎為重寶大器，三足穩重之象。煮食，喻食物充足，不再有困難和困擾。在此基礎上宜變革，發展事業。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 鼎顛趾，利出否。得妾以其子，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "鼎顛趾，未悖也。利出否，以從貴也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 鼎有實，我仇有疾，不我能即，吉。",
+        "image": {
+          "text": "",
+          "explanation": "鼎有實，慎所之也。我仇有疾，終無尤也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 鼎耳革，其行塞，雉膏不食。方雨，虧悔，終吉。",
+        "image": {
+          "text": "",
+          "explanation": "鼎耳革，失其義也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 鼎折足，覆公餗，其形渥，凶。",
+        "image": {
+          "text": "",
+          "explanation": "覆公餗，信如何也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 鼎黃耳金鉉，利貞。",
+        "image": {
+          "text": "",
+          "explanation": "鼎黃耳，中以為實也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 鼎玉鉉，大吉，無不利。",
+        "image": {
+          "text": "",
+          "explanation": "玉鉉在上，剛柔節也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 51,
+    "name": "震卦",
+    "chineseName": "震為雷",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "震。",
+      "explanation": "亨。震來虩虩，笑言啞啞。震驚百里，不喪匕鬯。"
+    },
+    "image": {
+      "text": "洊雷，震。君子以恐懼修省。",
+      "explanation": "洊雷，震。君子以恐懼修省。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下震上震)相疊。震為雷，兩震相疊，反響巨大，可消除沉悶之氣，亨通暢達。平日應居安思危，懷恐懼心理，不敢有所怠慢，遇到突發事變，也能安然自若，談笑如常。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 震來虩虩，後笑言啞啞，吉。",
+        "image": {
+          "text": "",
+          "explanation": "震來虩虩，恐致福也。笑言啞啞，後有則也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 震來厲，億喪貝。躋於九陵，勿逐，七日得。",
+        "image": {
+          "text": "",
+          "explanation": "震來厲，乘剛也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 震蘇蘇，震行無眚。",
+        "image": {
+          "text": "",
+          "explanation": "震蘇蘇，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 震遂泥。",
+        "image": {
+          "text": "",
+          "explanation": "震遂泥，未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 震往來厲，億無喪，有事。",
+        "image": {
+          "text": "",
+          "explanation": "震往來厲，危行也。其事在中，大無喪也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 震索索，視矍矍，征凶。震不於其躬，於其鄰，無咎。婚媾有言。",
+        "image": {
+          "text": "",
+          "explanation": "震索索，未得中也。雖凶無咎，畏鄰戒也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 52,
+    "name": "艮卦",
+    "chineseName": "艮為山",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "艮。",
+      "explanation": "艮其背，不獲其身。行其庭，不見其人。無咎。"
+    },
+    "image": {
+      "text": "兼山，艮。君子以思不出其位。",
+      "explanation": "兼山，艮。君子以思不出其位。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下艮上艮)相疊。艮為山，二山相重，喻靜止。它和震卦相反。高潮過後，必然出現低潮，進入事物的相對靜止階段。靜止如山，宜止則止，宜行則行。行止即動和靜，都不可失機，應恰到好處，動靜得宜，適可而止。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 艮其趾，無咎。利永貞。",
+        "image": {
+          "text": "",
+          "explanation": "艮其趾，未失正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 艮其腓，不拯其隨，其心不快。",
+        "image": {
+          "text": "",
+          "explanation": "不拯其隨，未退聽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 艮其限，列其夤，厲薰心。",
+        "image": {
+          "text": "",
+          "explanation": "艮其限，危薰心也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 艮其身，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "艮其身，止諸躬也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 艮其輔，言有序，悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "艮其輔，以中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 敦艮，吉。",
+        "image": {
+          "text": "",
+          "explanation": "敦艮之吉，以厚終也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 53,
+    "name": "漸卦",
+    "chineseName": "風山漸",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "漸。",
+      "explanation": "女歸吉，利貞。"
+    },
+    "image": {
+      "text": "山上有木，漸。君子以居賢德善俗。",
+      "explanation": "山上有木，漸。君子以居賢德善俗。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上巽)相疊。艮為山，巽為木。山上有木，逐漸成長，山也隨著增高。這是逐漸進步的過程，所以稱漸，漸即進，漸漸前進而不急速。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 鴻漸於乾，小子厲。有言，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "小子之厲，義無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 鴻漸於磐，飲食衎衎，吉。",
+        "image": {
+          "text": "",
+          "explanation": "飲食衎衎，不素飽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 鴻漸於陸，夫征不復，婦孕不育，凶。利禦寇。",
+        "image": {
+          "text": "",
+          "explanation": "夫征不復，離群醜也。婦孕不育，失其道也。利用禦寇，順相保也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 鴻漸於木，或得其桷，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "或得其桷，順以巽也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 鴻漸於陵，婦三歲不孕，終莫之勝，吉。",
+        "image": {
+          "text": "",
+          "explanation": "終莫之勝，吉，得所願也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 鴻漸於陸，其羽可用為儀，吉。",
+        "image": {
+          "text": "",
+          "explanation": "其羽可用為儀吉，不可亂也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 54,
+    "name": "歸妹卦",
+    "chineseName": "雷澤歸妹",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "歸妹。",
+      "explanation": "征凶，無攸利。"
+    },
+    "image": {
+      "text": "澤上有雷，歸妹。君子以永終知敝。",
+      "explanation": "澤上有雷，歸妹。君子以永終知敝。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上震)相疊。震為動、為長男;兌為悅、為少女。以少女從長男，產生愛慕之情，有婚姻之動，有嫁女之象，故稱歸妹。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 歸妹以娣，跛能履，征吉。",
+        "image": {
+          "text": "",
+          "explanation": "歸妹以娣，以恆也。跛能履，吉相承也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 眇能視，利幽人之貞。",
+        "image": {
+          "text": "",
+          "explanation": "利幽人之貞，未變常也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 歸妹以須，反歸以娣。",
+        "image": {
+          "text": "",
+          "explanation": "歸妹以須，未當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 歸妹愆期，遲歸有時。",
+        "image": {
+          "text": "",
+          "explanation": "愆期之志，有待而行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 帝乙歸妹，其君之袂不如其娣之袂良。月幾望，吉。",
+        "image": {
+          "text": "",
+          "explanation": "帝乙歸妹，不如其娣之袂良也。其位在中，以貴行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 女承筐無實，士刲羊無血，無攸利。",
+        "image": {
+          "text": "",
+          "explanation": "上六無實，承虛筐也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 55,
+    "name": "豐卦",
+    "chineseName": "雷火豐",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "豐。",
+      "explanation": "亨。王假之，勿憂，宜日中。"
+    },
+    "image": {
+      "text": "雷電皆至，豐。君子以折獄致刑。",
+      "explanation": "雷電皆至，豐。君子以折獄致刑。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上震)相疊，電閃雷鳴，成就巨大，喻達到頂峰，如日中天。告戒;務必注意事物向相反方面發展，盛衰無常，不可不警惕。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 遇其配主，雖旬無咎;往有尚。",
+        "image": {
+          "text": "",
+          "explanation": "雖旬無咎，過旬災也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 豐其蔀，日中見斗。往得疑疾。有孚發若，吉。",
+        "image": {
+          "text": "",
+          "explanation": "有孚發若，信以發志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 豐其沛，日中見沬。折其右肱，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "豐其沛，不可大事也。折其右肱，終不可用也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 豐其蔀，日中見斗。遇其夷主，吉。",
+        "image": {
+          "text": "",
+          "explanation": "豐其蔀，位不當也。日中見斗，幽不明也。遇其夷主，吉行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 來章，有慶譽，吉。",
+        "image": {
+          "text": "",
+          "explanation": "六五之吉，有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 豐其屋，蔀其家，窺其戶，闃其無人，三歲不覿，凶。",
+        "image": {
+          "text": "",
+          "explanation": "豐其屋，天際翔也。窺其戶，闃其無人，自藏也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 56,
+    "name": "旅卦",
+    "chineseName": "火山旅",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "旅。",
+      "explanation": "小亨，旅貞吉。"
+    },
+    "image": {
+      "text": "山上有火，旅。君子以明慎用刑而不留獄。",
+      "explanation": "山上有火，旅。君子以明慎用刑而不留獄。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上離)相疊。此卦與豐卦相反，互為“綜卦”。山中燃火，燒而不止，火勢不停地向前蔓延，如同途中行人，急於趕路。因而稱旅卦。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 旅瑣瑣，斯其所取災。",
+        "image": {
+          "text": "",
+          "explanation": "旅瑣瑣，志窮災也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 旅即次，懷其資，得童僕，貞。",
+        "image": {
+          "text": "",
+          "explanation": "得童僕貞，終無尤也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 旅焚其次，喪其童僕，貞厲。",
+        "image": {
+          "text": "",
+          "explanation": "旅焚其次，亦以傷矣。以旅與下，其義喪也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 旅於處，得其資斧，我心不快。",
+        "image": {
+          "text": "",
+          "explanation": "旅於處，未得位也。得其資斧，心未快也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 射雉，一矢亡，終以譽命。",
+        "image": {
+          "text": "",
+          "explanation": "終以譽命，上逮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 鳥焚其巢，旅人先笑後號啕。喪牛於易，凶。",
+        "image": {
+          "text": "",
+          "explanation": "以旅在上，其義焚也。喪牛於易，終莫之聞也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 57,
+    "name": "巽卦",
+    "chineseName": "巽為風",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "巽。",
+      "explanation": "小亨。利有攸往，利見大人。"
+    },
+    "image": {
+      "text": "隨風，巽。君子以申命行事。",
+      "explanation": "隨風，巽。君子以申命行事。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下巽上巽)相疊，巽為風，兩風相重，長風不絕，無孔不入，巽義為順。謙遜的態度和行為可無往不利。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 進退，利武人之貞。",
+        "image": {
+          "text": "",
+          "explanation": "進退，志疑也。利武人之貞，志治也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 巽在床下，用史巫紛若，吉，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "紛若之吉，得中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 頻巽，吝。",
+        "image": {
+          "text": "",
+          "explanation": "頻巽之吝，志窮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 悔亡，田獲三品。",
+        "image": {
+          "text": "",
+          "explanation": "田獲三品，有功也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 貞吉，悔亡，無不利。無初有終。先庚三日，後庚三日，吉。",
+        "image": {
+          "text": "",
+          "explanation": "九五之吉，位中正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 巽在床下，喪其資斧，貞凶。",
+        "image": {
+          "text": "",
+          "explanation": "巽在床下，上窮也;喪其資斧，正乎凶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 58,
+    "name": "兌卦",
+    "chineseName": "兌為澤",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "兌。",
+      "explanation": "亨，利，貞。"
+    },
+    "image": {
+      "text": "麗澤兌。君子以朋友講習。",
+      "explanation": "麗澤兌。君子以朋友講習。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是同卦(下澤上澤)相疊。澤為水。兩澤相連，兩水交流，上下相和，團結一致，朋友相助，歡欣喜悅。兌為悅也。同秉剛健之德，外抱柔和之姿，堅行正道，導民向上。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 和兌，吉。",
+        "image": {
+          "text": "",
+          "explanation": "和兌之吉，行未疑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 孚兌，吉，悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "孚兌之吉，信志也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 來兌，凶。",
+        "image": {
+          "text": "",
+          "explanation": "來兌之凶，位不當也"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 商兌未寧，介疾有喜。",
+        "image": {
+          "text": "",
+          "explanation": "九四之喜，有慶也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 孚於剝，有厲。",
+        "image": {
+          "text": "",
+          "explanation": "孚於剝，位正當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 引兌。",
+        "image": {
+          "text": "",
+          "explanation": "上六引兌，未光也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 59,
+    "name": "渙卦",
+    "chineseName": "風水渙",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "渙。",
+      "explanation": "亨，王假有廟。利涉大川，利貞。"
+    },
+    "image": {
+      "text": "風行水上，渙。先王以享於帝，立廟。",
+      "explanation": "風行水上，渙。先王以享於帝，立廟。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上巽)相疊。風在水上行，推波助瀾，四方流溢。渙，水流流散之意。象徵組織和人心渙散，必用積極的手段和方法克服，戰勝弊端，挽救渙散，轉危為安。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 用拯馬壯，吉。",
+        "image": {
+          "text": "",
+          "explanation": "初六之吉，順也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 渙奔其機，悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "渙奔其機，得願也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 渙其躬，無悔。",
+        "image": {
+          "text": "",
+          "explanation": "渙其躬，志在外也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 渙其群，元吉。渙有丘，匪夷所思。",
+        "image": {
+          "text": "",
+          "explanation": "渙其群，元吉，光大也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 渙汗，其大號渙，王居，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "王居無咎，正位也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 渙其血，去逖出，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "渙其血，遠害也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 60,
+    "name": "節卦",
+    "chineseName": "水澤節",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "節。",
+      "explanation": "亨，苦節不可貞。"
+    },
+    "image": {
+      "text": "澤上有水，節。君子以制數度，議德行。",
+      "explanation": "澤上有水，節。君子以制數度，議德行。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上坎)相疊。兌為澤，坎為水。澤有水而流有限，多必溢於澤外。因此要有節度，故稱節。節卦與渙卦相反，互為綜卦，交相使用。天地有節度才能常新，國家有節度才能安穩，個人有節度才能完美。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 不出戶庭，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "不出戶庭，知通塞也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 不出門庭，凶。",
+        "image": {
+          "text": "",
+          "explanation": "不出門庭凶，失時極也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 不節若，則嗟若。無咎。",
+        "image": {
+          "text": "",
+          "explanation": "不節之嗟，又誰咎也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 安節，亨。",
+        "image": {
+          "text": "",
+          "explanation": "安節之亨，承上道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 甘節，吉，往有尚。",
+        "image": {
+          "text": "",
+          "explanation": "甘節之吉，居位中也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 苦節，貞凶。悔亡。",
+        "image": {
+          "text": "",
+          "explanation": "苦節貞凶，其道窮也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 61,
+    "name": "中孚卦",
+    "chineseName": "風澤中孚",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "中孚。",
+      "explanation": "豚魚，吉。利涉大川，利貞。"
+    },
+    "image": {
+      "text": "澤上有風，中孚。君子以議獄緩死。",
+      "explanation": "澤上有風，中孚。君子以議獄緩死。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下兌上巽)相疊。孚本義孵，孵卵出殼的日期非常準確，有信的意義。卦形外實內虛，喻心中誠信，所以稱中孚卦。這是立身處世的根本。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 虞吉，有它不燕。",
+        "image": {
+          "text": "",
+          "explanation": "初九虞吉，志未變也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 鳴鶴在陰，其子和之。我有好爵，吾與爾靡之。",
+        "image": {
+          "text": "",
+          "explanation": "其子和之，中心愿也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 得敵，或鼓或罷，或泣或歌。",
+        "image": {
+          "text": "",
+          "explanation": "或鼓或罷，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 月既望，馬匹亡，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "馬匹亡，絕類上也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 有孚攣如，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "有孚攣如，位正當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 翰音登於天，貞凶。",
+        "image": {
+          "text": "",
+          "explanation": "翰音登於天，何可長也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 62,
+    "name": "小過卦",
+    "chineseName": "雷山小過",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "小過。",
+      "explanation": "亨，利貞。可小事，不可大事。飛鳥遺之音。不宜上，宜下，大吉。"
+    },
+    "image": {
+      "text": "山上有雷，小過。君子以行過乎恭，喪過乎衰，用過乎儉。",
+      "explanation": "山上有雷，小過。君子以行過乎恭，喪過乎衰，用過乎儉。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下艮上震)相疊。艮為山，震為雷，過山雷鳴，不可不畏懼。陽為大，陰為小，卦外四陰超過中二陽，故稱“小過”，小有越過。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 飛鳥以凶。",
+        "image": {
+          "text": "",
+          "explanation": "飛鳥以凶，不可如何也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 過其祖，遇其妣。不及其君，遇其臣，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "不及其君，臣不可過也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 弗過防之，從或戕之，凶。",
+        "image": {
+          "text": "",
+          "explanation": "從或戕之，凶如何也?"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 無咎，弗過遇之，往厲必戒。勿用，永貞。",
+        "image": {
+          "text": "",
+          "explanation": "弗過遇之，位不當也。往厲必戒，終不可長也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 密雲不雨，自我西郊。公弋取彼在穴。",
+        "image": {
+          "text": "",
+          "explanation": "密雲不雨，已上也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 弗遇過之，飛鳥離之，凶。是謂災眚。",
+        "image": {
+          "text": "",
+          "explanation": "弗遇過之，已亢也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 63,
+    "name": "既濟卦",
+    "chineseName": "水火既濟",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "既濟。",
+      "explanation": "亨小，利貞。初吉，終亂。"
+    },
+    "image": {
+      "text": "水在火上，既濟。君子以思患而豫防之。",
+      "explanation": "水在火上，既濟。君子以思患而豫防之。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下離上坎)相疊。坎為水，離為火，水火相交，水在火上，水勢壓倒火勢，救火大功告成。既，已經;濟，成也。既濟就是事情已經成功，但終將發生變故。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yang",
+        "changing": false,
+        "text": "初九爻辭",
+        "explanation": "**初九。** 曳其輪，濡其尾，無咎。",
+        "image": {
+          "text": "",
+          "explanation": "曳其輪，義無咎也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yin",
+        "changing": false,
+        "text": "六二爻辭",
+        "explanation": "**六二。** 婦喪其茀，勿逐，七日得。",
+        "image": {
+          "text": "",
+          "explanation": "七日得，以中道也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yang",
+        "changing": false,
+        "text": "九三爻辭",
+        "explanation": "**九三。** 高宗伐鬼方，三年克之。小人勿用。",
+        "image": {
+          "text": "",
+          "explanation": "三年克之，憊也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yin",
+        "changing": false,
+        "text": "六四爻辭",
+        "explanation": "**六四。** 繻有衣袽，終日戒。",
+        "image": {
+          "text": "",
+          "explanation": "終日戒，有所疑也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yang",
+        "changing": false,
+        "text": "九五爻辭",
+        "explanation": "**九五。** 東鄰殺牛，不如西郊之禴祭，實受其福。",
+        "image": {
+          "text": "",
+          "explanation": "東鄰殺牛，不如西鄰之時也。實受其福，吉大來也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yin",
+        "changing": false,
+        "text": "上六爻辭",
+        "explanation": "**上六。** 濡其首，厲。",
+        "image": {
+          "text": "",
+          "explanation": "濡其首厲，何可久也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  {
+    "number": 64,
+    "name": "未濟卦",
+    "chineseName": "火水未濟",
+    "symbol": "",
+    "upperTrigram": "",
+    "lowerTrigram": "",
+    "kingWen": {
+      "text": "未濟。",
+      "explanation": "亨。小狐汔濟，濡其尾，無攸利。"
+    },
+    "image": {
+      "text": "火在水上，未濟。君子以慎辨物居方。",
+      "explanation": "火在水上，未濟。君子以慎辨物居方。"
+    },
+    "interpretations": {
+      "traditional": {
+        "description": "這個卦是異卦(下坎上離)相疊。離為火，坎為水。火上水下，火勢壓倒水勢，救火大功未成，故稱未濟。《周易》以乾坤二卦為始，以既濟、未濟二卦為終，充分反映了變化發展的思想。"
+      }
+    },
+    "lines": [
+      {
+        "position": 1,
+        "type": "yin",
+        "changing": false,
+        "text": "初六爻辭",
+        "explanation": "**初六。** 濡其尾，吝。",
+        "image": {
+          "text": "",
+          "explanation": "濡其尾，亦不知極也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 2,
+        "type": "yang",
+        "changing": false,
+        "text": "九二爻辭",
+        "explanation": "**九二。** 曳其輪，貞吉。",
+        "image": {
+          "text": "",
+          "explanation": "九二貞吉，中以行正也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 3,
+        "type": "yin",
+        "changing": false,
+        "text": "六三爻辭",
+        "explanation": "**六三。** 未濟，征凶，利涉大川。",
+        "image": {
+          "text": "",
+          "explanation": "未濟征凶，位不當也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 4,
+        "type": "yang",
+        "changing": false,
+        "text": "九四爻辭",
+        "explanation": "**九四。** 貞吉，悔亡，震用伐鬼方。三年有賞於大國。",
+        "image": {
+          "text": "",
+          "explanation": "貞吉悔亡，志行也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 5,
+        "type": "yin",
+        "changing": false,
+        "text": "六五爻辭",
+        "explanation": "**六五。** 貞吉，無悔，君子之光。有孚，吉。",
+        "image": {
+          "text": "",
+          "explanation": "君子之光，其暉吉也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      },
+      {
+        "position": 6,
+        "type": "yang",
+        "changing": false,
+        "text": "上九爻辭",
+        "explanation": "**上九。** 有孚於飲酒，無咎。濡其首，有孚失是。",
+        "image": {
+          "text": "",
+          "explanation": "飲酒濡首，亦不知節也。"
+        },
+        "interpretations": {},
+        "changes_to": {
+          "number": null,
+          "name": "",
+          "description": ""
+        }
+      }
+    ]
+  }
+]
