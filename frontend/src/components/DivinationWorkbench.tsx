@@ -135,13 +135,18 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
   const [notes, setNotes] = useState('');
   const [selectedView, setSelectedView] = useState<'original' | 'changed' | 'mutual'>('original');
   const [animatedResult, setAnimatedResult] = useState(false);
-  
-  // 起卦方法相关状态
+    // 起卦方法相关状态
   const [selectedMethod, setSelectedMethod] = useState<DivinationMethod>('coins');
   const [divinationInput, setDivinationInput] = useState<DivinationInputResult | null>(null);
 
+  // AI聊天相关状态
+  const [aiMessages, setAiMessages] = useState<Array<{id: string, role: 'user' | 'assistant', content: string, timestamp: Date}>>([]);
+  const [aiInput, setAiInput] = useState('');
+  const [isAiLoading, setIsAiLoading] = useState(false);
+
   // Refs
   const questionTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const aiMessagesEndRef = useRef<HTMLDivElement>(null);
   // Toast 功能
   const { showSuccess, showError, showInfo } = useToast();
 
@@ -472,7 +477,6 @@ ${result.notes ? `备注：${result.notes}` : ''}
       console.error('保存历史记录失败:', error);
     }
   };
-
   // 重置占卜
   const resetDivination = () => {
     setQuestion('');
@@ -481,8 +485,91 @@ ${result.notes ? `备注：${result.notes}` : ''}
     setSelectedView('original');
     setDivinationInput(null);
     setDivinerName('');
+    setAiMessages([]); // 重置AI聊天记录
     if (onClearViewingRecord) {
       onClearViewingRecord();
+    }
+  };
+
+  // AI聊天功能
+  const sendAiMessage = async () => {
+    if (!aiInput.trim() || !result || isAiLoading) return;
+
+    const userMessage = {
+      id: Date.now().toString(),
+      role: 'user' as const,
+      content: aiInput.trim(),
+      timestamp: new Date()
+    };
+
+    // 添加用户消息
+    setAiMessages(prev => [...prev, userMessage]);
+    setAiInput('');
+    setIsAiLoading(true);
+
+    try {
+      // 构建卦象上下文
+      const hexagramContext = {
+        question: result.question,
+        originalHexagram: result.originalHexagram,
+        changedHexagram: result.changedHexagram,
+        interpretation: result.interpretation
+      };
+
+      // 构建对话历史
+      const conversationHistory = aiMessages.map(msg => ({
+        role: msg.role,
+        content: msg.content
+      }));      // 调用后端AI接口
+      const response = await fetch('http://localhost:8000/api/divination/ai-chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessage.content,
+          hexagram_context: hexagramContext,
+          conversation_history: conversationHistory
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      
+      // 添加AI回复
+      const aiMessage = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant' as const,
+        content: data.response,
+        timestamp: new Date()
+      };
+
+      setAiMessages(prev => [...prev, aiMessage]);
+      showSuccess('AI回复', '已收到AI的解读回复');
+
+    } catch (error) {
+      console.error('AI聊天失败:', error);
+      showError('AI聊天失败', '无法获取AI回复，请稍后重试');
+    } finally {
+      setIsAiLoading(false);
+    }
+  };
+
+  // 自动滚动到AI消息底部
+  useEffect(() => {
+    if (aiMessagesEndRef.current) {
+      aiMessagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [aiMessages]);
+
+  // 处理AI输入框回车发送
+  const handleAiInputKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendAiMessage();
     }
   };
   // 渲染卦象 - 增强版本
@@ -888,37 +975,83 @@ ${result.notes ? `备注：${result.notes}` : ''}
         </div>        {/* 右侧AI解卦对话栏 - 新功能区域 */}
         <div className="w-[280px] lg:w-[320px] xl:w-[360px] bg-[#111827] border-l border-[#374151] flex flex-col overflow-y-auto glass-effect shrink-0">
           {result ? (
-            <div className="flex flex-col h-full">
-              {/* AI解卦对话区域 */}
-              <div className="p-4 border-b border-[#374151] flex-1">
+            <div className="flex flex-col h-full">              {/* AI解卦对话区域 */}
+              <div className="p-4 border-b border-[#374151] flex-1 flex flex-col">
                 <h3 className="text-sm font-medium text-white/90 mb-3 flex items-center gap-2">
                   <Sparkles className="h-4 w-4" />
                   AI解卦助手
                 </h3>
-                <div className="space-y-3 text-sm">
-                  {/* AI对话消息区域 */}
-                  <div className="bg-[#1e293b] p-3 rounded border border-[#374151] min-h-[300px] max-h-[400px] overflow-y-auto">
-                    <div className="text-white/70 text-center py-8">
-                      <Sparkles className="h-8 w-8 mx-auto mb-3 opacity-50" />
-                      <p>AI解卦功能即将推出</p>
-                      <p className="text-xs mt-2">将为您提供个性化的卦象解读</p>
-                    </div>
+                
+                {/* AI对话消息区域 */}
+                <div className="bg-[#1e293b] border border-[#374151] rounded-lg flex-1 flex flex-col min-h-[300px] max-h-[400px]">
+                  <div className="flex-1 overflow-y-auto p-3 space-y-3">
+                    {aiMessages.length === 0 ? (
+                      <div className="text-white/70 text-center py-8">
+                        <Sparkles className="h-8 w-8 mx-auto mb-3 opacity-50" />
+                        <p className="text-sm">与AI讨论您的卦象</p>
+                        <p className="text-xs mt-2 opacity-75">AI将基于当前卦象为您答疑解惑</p>
+                      </div>
+                    ) : (
+                      <>
+                        {aiMessages.map((message) => (
+                          <div key={message.id} className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                            <div className={`max-w-[85%] p-2 rounded-lg text-sm ${
+                              message.role === 'user' 
+                                ? 'bg-[#4f46e5] text-white' 
+                                : 'bg-[#374151] text-white/90'
+                            }`}>
+                              <div className="whitespace-pre-wrap">{message.content}</div>
+                              <div className={`text-xs mt-1 opacity-70 ${
+                                message.role === 'user' ? 'text-right' : 'text-left'
+                              }`}>
+                                {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                        {isAiLoading && (
+                          <div className="flex justify-start">
+                            <div className="bg-[#374151] text-white/90 p-2 rounded-lg text-sm max-w-[85%]">
+                              <div className="flex items-center gap-2">
+                                <div className="flex gap-1">
+                                  {[0, 1, 2].map((i) => (
+                                    <div
+                                      key={i}
+                                      className="w-1 h-1 bg-white/70 rounded-full animate-bounce"
+                                      style={{ animationDelay: `${i * 0.2}s` }}
+                                    />
+                                  ))}
+                                </div>
+                                <span>AI正在思考...</span>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        <div ref={aiMessagesEndRef} />
+                      </>
+                    )}
                   </div>
                   
                   {/* AI对话输入框 */}
-                  <div className="flex gap-2">
-                    <Input
-                      placeholder="询问AI关于这个卦象..."
-                      className="bg-[#1e293b] border-[#374151] text-white placeholder-white/50 text-sm flex-1"
-                      disabled
-                    />
-                    <Button
-                      size="sm"
-                      className="bg-[#4f46e5] hover:bg-[#4338ca] px-3"
-                      disabled
-                    >
-                      <Zap className="h-4 w-4" />
-                    </Button>
+                  <div className="p-3 border-t border-[#374151]">
+                    <div className="flex gap-2">
+                      <Input
+                        placeholder="询问AI关于这个卦象..."
+                        value={aiInput}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setAiInput(e.target.value)}
+                        onKeyPress={handleAiInputKeyPress}
+                        className="bg-[#111827] border-[#374151] text-white placeholder-white/50 text-sm flex-1 focus:border-[#4f46e5] transition-colors"
+                        disabled={isAiLoading}
+                      />
+                      <Button
+                        onClick={sendAiMessage}
+                        size="sm"
+                        className="bg-[#4f46e5] hover:bg-[#4338ca] px-3 transition-colors"
+                        disabled={!aiInput.trim() || isAiLoading}
+                      >
+                        <Zap className="h-4 w-4" />
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -988,8 +1121,7 @@ ${result.notes ? `备注：${result.notes}` : ''}
                   </Button>
                 </div>
               </div>
-            </div>
-          ) : (
+            </div>          ) : (
             <div className="p-4">
               <h3 className="text-sm font-medium text-white/90 mb-3 flex items-center gap-2">
                 <Sparkles className="h-4 w-4" />
@@ -1003,13 +1135,20 @@ ${result.notes ? `备注：${result.notes}` : ''}
                 </div>
                 
                 <div className="bg-[#1e293b] p-3 rounded border border-[#374151]">
-                  <h4 className="text-white/90 font-medium mb-2">AI功能预告</h4>
+                  <h4 className="text-white/90 font-medium mb-2">AI助手功能</h4>
                   <ul className="space-y-1 text-xs">
-                    <li>• 个性化卦象解读</li>
-                    <li>• 互动式问答</li>
-                    <li>• 深度分析建议</li>
-                    <li>• 历史对比参考</li>
+                    <li>• 深度卦象解析</li>
+                    <li>• 个性化问题答疑</li>
+                    <li>• 实时智能对话</li>
+                    <li>• 传统与现代结合</li>
                   </ul>
+                </div>
+                
+                <div className="bg-[#1e293b] p-3 rounded border border-[#374151]">
+                  <h4 className="text-white/90 font-medium mb-2">使用提示</h4>
+                  <p className="text-xs leading-relaxed">
+                    占卜完成后，您可以向AI询问卦象的深层含义、如何应用到具体问题中，或者请求更详细的解释。
+                  </p>
                 </div>
               </div>
             </div>
