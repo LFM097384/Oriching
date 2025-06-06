@@ -143,7 +143,7 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
   // Refs
   const questionTextareaRef = useRef<HTMLTextAreaElement>(null);
   // Toast 功能
-  const { dismiss, showSuccess, showError, showInfo } = useToast();
+  const { showSuccess, showError, showInfo } = useToast();
 
   // 键盘快捷键处理
   useEffect(() => {
@@ -485,24 +485,28 @@ ${result.notes ? `备注：${result.notes}` : ''}
           <div className="text-lg text-white/70">{hexagram.name}</div>
         </div>
       );
-    }
-
-    // 转换为 AnimatedHexagram 需要的格式
-    const animatedLines = hexagram.lines.map(line => ({
-      position: line.position,
-      type: line.type,
-      changing: line.changing
-    }));
+    }    // 转换为 AnimatedHexagram 需要的格式（数字数组）
+    const animatedLines = hexagram.lines.map(line => {
+      // 根据易经规则转换为数字
+      if (line.type === 'yang') {
+        return line.changing ? 9 : 7; // 老阳（变）：9，少阳（不变）：7
+      } else {
+        return line.changing ? 6 : 8; // 老阴（变）：6，少阴（不变）：8
+      }
+    });
 
     return (
-      <AnimatedHexagram
-        lines={animatedLines}
-        symbol={hexagram.symbol}
-        name={hexagram.name}
-        chineseName={hexagram.chineseName}
-        animate={animatedResult}
-        className="animate-fade-in-up"
-      />
+      <div className="text-center animate-fade-in-up">
+        <AnimatedHexagram
+          lines={animatedLines}
+          size="lg"
+          animated={animatedResult}
+          className="mb-4"
+        />
+        <div className="text-4xl mb-2 animate-float">{hexagram.symbol}</div>
+        <div className="text-xl font-bold text-gradient">{hexagram.chineseName}</div>
+        <div className="text-lg text-white/70">{hexagram.name}</div>
+      </div>
     );
   };
 
@@ -580,12 +584,20 @@ ${result.notes ? `备注：${result.notes}` : ''}
         )}
       </div>
     );
-  };
-  return (
+  };  return (
     <TooltipProvider>
       <div className="h-screen flex flex-col bg-[#0f172a] overflow-hidden dark-mode-enhanced">
         {/* Enhanced Loading Overlay */}
-        <EnhancedLoadingSpinner isLoading={isLoading} />
+        {isLoading && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+            <EnhancedLoadingSpinner 
+              size="lg" 
+              variant="pulse" 
+              text="占卜中..."
+              className="text-white"
+            />
+          </div>
+        )}
         
         {/* Toast Container */}
         <ToastContainer />

@@ -115,7 +115,7 @@ def get_hexagram_from_lines(lines: List[Line]) -> Hexagram:
     Get the hexagram corresponding to the given lines.
     
     Args:
-        lines: List of six Line objects
+        lines: List of six Line objects (position 1-6, where 1 is bottom, 6 is top)
         
     Returns:
         Hexagram object matching the line pattern
@@ -126,17 +126,24 @@ def get_hexagram_from_lines(lines: List[Line]) -> Hexagram:
     if len(lines) != 6:
         raise ValueError("必须提供6个爻")
     
-    # Convert lines to binary string (from bottom to top, so reverse order)
-    binary_string = ''.join([
-        '1' if line.type == 'yang' else '0' 
-        for line in reversed(lines)
+    # 确保爻按位置排序（从下到上：1,2,3,4,5,6）
+    sorted_lines = sorted(lines, key=lambda x: x.position)
+      # 转换为二进制：上卦（第4,5,6爻）+ 下卦（第1,2,3爻）
+    # 按照周易传统，所有三卦都从下往上数
+    
+    # 上卦：从第4爻到第6爻（从下往上）
+    upper_trigram = ''.join([
+        '1' if sorted_lines[3].type == 'yang' else '0',  # 第4爻（上卦底部）
+        '1' if sorted_lines[4].type == 'yang' else '0',  # 第5爻（上卦中部）
+        '1' if sorted_lines[5].type == 'yang' else '0'   # 第6爻（上卦顶部）
     ])
-    
-    # Split into upper and lower trigrams
-    upper_trigram = binary_string[:3]
-    lower_trigram = binary_string[3:6]
-    
-    # Find matching hexagram
+      # 下卦：从第1爻到第3爻（从下往上）
+    lower_trigram = ''.join([
+        '1' if sorted_lines[0].type == 'yang' else '0',  # 第1爻（下卦底部）
+        '1' if sorted_lines[1].type == 'yang' else '0',  # 第2爻（下卦中部）
+        '1' if sorted_lines[2].type == 'yang' else '0'   # 第3爻（下卦顶部）
+    ])
+      # Find matching hexagram
     hexagram = data_manager.get_hexagram_by_trigrams(upper_trigram, lower_trigram)
     
     if hexagram is None:
@@ -146,6 +153,9 @@ def get_hexagram_from_lines(lines: List[Line]) -> Hexagram:
             hexagram = all_hexagrams[0]
         else:
             raise ValueError("无法找到对应的卦象")
+    
+    # 重要：将爻线信息附加到卦象上，这样前端就能正确显示爻线和变爻
+    hexagram.lines = sorted_lines
     
     return hexagram
 
@@ -181,7 +191,11 @@ def get_changed_hexagram(lines: List[Line]) -> Optional[Hexagram]:
             changing=False  # Changed lines are no longer changing
         ))
     
-    return get_hexagram_from_lines(changed_lines)
+    # Get the hexagram and attach the changed lines to it
+    changed_hexagram = get_hexagram_from_lines(changed_lines)
+    changed_hexagram.lines = changed_lines  # 重要：将变换后的爻线信息附加到变卦上
+    
+    return changed_hexagram
 
 
 def generate_interpretation(

@@ -123,6 +123,25 @@ class DivinationRequest(BaseModel):
     }
 
 
+class ManualDivinationRequest(BaseModel):
+    """
+    Request model for manual divination with provided lines.
+    """
+    question: str = Field(..., min_length=1, max_length=500, description="The divination question")
+    lines: list[int] = Field(..., min_length=6, max_length=6, description="Six lines as numbers: 6=老阴, 7=少阳, 8=少阴, 9=老阳")
+    birth_date: Optional[str] = Field(None, description="Birth date for personalized interpretation")
+
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "question": "测试变爻识别",
+                "lines": [7, 7, 7, 6, 7, 7],
+                "birth_date": "1990-01-01"
+            }
+        }
+    }
+
+
 class DivinationResult(BaseModel):
     """
     Complete divination result.

@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException
 from typing import List
 from datetime import datetime
 
-from models.schemas import DivinationRequest, DivinationResult, Line, Hexagram
+from models.schemas import DivinationRequest, ManualDivinationRequest, DivinationResult, Line, Hexagram
 from utils.divination_logic import (
     generate_six_lines,
     get_hexagram_from_lines,
@@ -95,3 +95,76 @@ async def get_divination_help() -> dict:
             "如何改善与同事的关系？"
         ]
     }
+
+
+@router.post("/divination/manual", response_model=DivinationResult)
+async def perform_manual_divination(request: ManualDivinationRequest) -> DivinationResult:
+    """
+    Perform a divination reading with manually provided lines.
+    
+    Args:
+        request: ManualDivinationRequest containing question, lines, and optional birth date
+        
+    Returns:
+        DivinationResult: Complete divination result with hexagrams and interpretation
+        
+    Raises:
+        HTTPException: If the question is empty, lines are invalid, or processing fails
+    """
+    if not request.question.strip():
+        raise HTTPException(status_code=400, detail="问题不能为空")
+    
+    # Validate request has exactly 6 lines
+    if len(request.lines) != 6:
+        raise HTTPException(status_code=400, detail=f"必须提供6个爻，当前提供了{len(request.lines)}个")
+    
+    # Validate line values
+    valid_line_values = {6, 7, 8, 9}
+    for i, line_value in enumerate(request.lines):
+        if line_value not in valid_line_values:
+            raise HTTPException(
+                status_code=400, 
+                detail=f"第{i+1}爻的值无效: {line_value}。有效值为: 6(老阴), 7(少阳), 8(少阴), 9(老阳)"
+            )
+    
+    try:
+        # Convert numeric line values to Line objects
+        lines: List[Line] = []
+        for position, line_value in enumerate(request.lines, 1):
+            line_type = 'yang' if line_value in [7, 9] else 'yin'
+            changing = line_value in [6, 9]  # 老阴和老阳为变爻
+            
+            line = Line(
+                position=position,
+                type=line_type,
+                changing=changing,
+                text="",
+                explanation=""
+            )
+            lines.append(line)
+        
+        # Get the primary hexagram from the lines
+        original_hexagram: Hexagram = get_hexagram_from_lines(lines)
+        
+        # Get the changed hexagram if there are changing lines
+        changed_hexagram: Hexagram | None = get_changed_hexagram(lines)
+        
+        # Generate detailed interpretation
+        interpretation: str = generate_interpretation(
+            request.question,
+            original_hexagram,
+            changed_hexagram,
+            lines
+        )
+        
+        return DivinationResult(
+            originalHexagram=original_hexagram,
+            changedHexagram=changed_hexagram,
+            lines=lines,
+            question=request.question,
+            timestamp=datetime.now(),
+            interpretation=interpretation
+        )
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"手动占卜过程中发生错误: {str(e)}")

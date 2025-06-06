@@ -102,7 +102,89 @@ class HexagramDataManager:
                 "career": "事业需要踏实努力，默默耕耘。团队合作，服务他人，终将获得认可。",
                 "health": "身体状态稳定，需要调养。注意饮食，保持内心平和，健康自然来。",
                 "advice": "保持谦逊包容的态度，以德服人。时机未到不急躁，厚德载物，必有福报。"
-            }        ]
+            }
+        ]
+    
+    def _get_correct_trigrams(self, hexagram_number: int) -> Dict[str, str]:
+        """
+        Get the correct traditional I Ching trigram mappings for a hexagram.
+        
+        Args:
+            hexagram_number: The hexagram number (1-64)
+            
+        Returns:
+            Dictionary with 'upper' and 'lower' trigram strings
+        """        # 传统易经64卦的正确上下卦组合
+        # 使用传统的八卦编码：000=坤(地), 001=震(雷), 010=坎(水), 011=巽(风)
+        # 100=艮(山), 101=离(火), 110=兑(泽), 111=乾(天)
+        trigram_mappings = {
+            1: {"upper": "111", "lower": "111"},   # 乾为天
+            2: {"upper": "000", "lower": "000"},   # 坤为地
+            3: {"upper": "010", "lower": "001"},   # 水雷屯
+            4: {"upper": "100", "lower": "010"},   # 山水蒙
+            5: {"upper": "010", "lower": "111"},   # 水天需
+            6: {"upper": "111", "lower": "010"},   # 天水讼
+            7: {"upper": "000", "lower": "010"},   # 地水师
+            8: {"upper": "010", "lower": "000"},   # 水地比
+            9: {"upper": "011", "lower": "111"},   # 风天小畜
+            10: {"upper": "110", "lower": "111"},  # 泽天履
+            11: {"upper": "000", "lower": "111"},  # 地天泰
+            12: {"upper": "111", "lower": "000"},  # 天地否
+            13: {"upper": "111", "lower": "101"},  # 天火同人
+            14: {"upper": "101", "lower": "111"},  # 火天大有
+            15: {"upper": "000", "lower": "100"},  # 地山谦
+            16: {"upper": "001", "lower": "000"},  # 雷地豫
+            17: {"upper": "110", "lower": "001"},  # 泽雷随
+            18: {"upper": "100", "lower": "011"},  # 山风蛊
+            19: {"upper": "000", "lower": "110"},  # 地泽临
+            20: {"upper": "011", "lower": "000"},  # 风地观
+            21: {"upper": "101", "lower": "001"},  # 火雷噬嗑
+            22: {"upper": "100", "lower": "101"},  # 山火贲
+            23: {"upper": "100", "lower": "000"},  # 山地剥
+            24: {"upper": "000", "lower": "001"},  # 地雷复
+            25: {"upper": "111", "lower": "001"},  # 天雷无妄
+            26: {"upper": "100", "lower": "111"},  # 山天大畜
+            27: {"upper": "100", "lower": "001"},  # 山雷颐
+            28: {"upper": "110", "lower": "011"},  # 泽风大过
+            29: {"upper": "010", "lower": "010"},  # 坎为水
+            30: {"upper": "101", "lower": "101"},  # 离为火
+            31: {"upper": "110", "lower": "100"},  # 泽山咸
+            32: {"upper": "001", "lower": "011"},  # 雷风恒
+            33: {"upper": "111", "lower": "100"},  # 天山遁
+            34: {"upper": "001", "lower": "111"},  # 雷天大壮
+            35: {"upper": "101", "lower": "000"},  # 火地晋
+            36: {"upper": "000", "lower": "101"},  # 地火明夷
+            37: {"upper": "011", "lower": "101"},  # 风火家人
+            38: {"upper": "101", "lower": "110"},  # 火泽睽
+            39: {"upper": "010", "lower": "100"},  # 水山蹇
+            40: {"upper": "001", "lower": "010"},  # 雷水解
+            41: {"upper": "100", "lower": "110"},  # 山泽损
+            42: {"upper": "011", "lower": "001"},  # 风雷益
+            43: {"upper": "110", "lower": "111"},  # 泽天夬
+            44: {"upper": "111", "lower": "011"},  # 天风姤
+            45: {"upper": "110", "lower": "000"},  # 泽地萃
+            46: {"upper": "000", "lower": "011"},  # 地风升
+            47: {"upper": "110", "lower": "010"},  # 泽水困
+            48: {"upper": "010", "lower": "011"},  # 水风井
+            49: {"upper": "110", "lower": "101"},  # 泽火革
+            50: {"upper": "101", "lower": "011"},  # 火风鼎
+            51: {"upper": "001", "lower": "001"},  # 震为雷
+            52: {"upper": "100", "lower": "100"},  # 艮为山
+            53: {"upper": "011", "lower": "100"},  # 风山渐
+            54: {"upper": "001", "lower": "110"},  # 雷泽归妹
+            55: {"upper": "001", "lower": "101"},  # 雷火丰
+            56: {"upper": "101", "lower": "100"},  # 火山旅
+            57: {"upper": "011", "lower": "011"},  # 巽为风
+            58: {"upper": "110", "lower": "110"},  # 兑为泽
+            59: {"upper": "011", "lower": "010"},  # 风水涣
+            60: {"upper": "010", "lower": "110"},  # 水泽节
+            61: {"upper": "011", "lower": "110"},  # 风泽中孚
+            62: {"upper": "100", "lower": "001"},  # 山雷小过
+            63: {"upper": "010", "lower": "101"},  # 水火既济
+            64: {"upper": "101", "lower": "010"}   # 火水未济
+        }
+        
+        return trigram_mappings.get(hexagram_number, {"upper": "000", "lower": "000"})
     
     def _ensure_data_loaded(self) -> None:
         """
@@ -128,10 +210,10 @@ class HexagramDataManager:
                             item["upperTrigram"] = "000"
                             item["lowerTrigram"] = "000"
                         else:
-                            # 根据卦象生成上下卦（简化版）
-                            base_code = bin(hexagram_number)[2:].zfill(6)
-                            item["upperTrigram"] = base_code[:3]
-                            item["lowerTrigram"] = base_code[3:]
+                            # 根据传统易经64卦的正确三元组编码
+                            trigram_map = self._get_correct_trigrams(hexagram_number)
+                            item["upperTrigram"] = trigram_map["upper"]
+                            item["lowerTrigram"] = trigram_map["lower"]
                     
                     # 添加描述字段（如果不存在）
                     if "description" not in item and "interpretations" in item and "traditional" in item["interpretations"]:
@@ -261,3 +343,22 @@ class HexagramDataManager:
         self._hexagrams_cache = None
         self._hexagrams_dict = None
         self._ensure_data_loaded()
+
+
+# Create default manager instance
+hexagram_manager = HexagramDataManager()
+
+
+def get_hexagram_by_number(number: int) -> Optional[Hexagram]:
+    """Convenience function to get hexagram by number."""
+    return hexagram_manager.get_hexagram_by_number(number)
+
+
+def get_hexagram_by_trigrams(upper_trigram: str, lower_trigram: str) -> Optional[Hexagram]:
+    """Convenience function to get hexagram by trigrams."""
+    return hexagram_manager.get_hexagram_by_trigrams(upper_trigram, lower_trigram)
+
+
+def get_all_hexagrams() -> List[Hexagram]:
+    """Convenience function to get all hexagrams."""
+    return hexagram_manager.get_all_hexagrams()
