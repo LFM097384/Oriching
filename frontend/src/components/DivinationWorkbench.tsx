@@ -142,9 +142,8 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
 
   // Refs
   const questionTextareaRef = useRef<HTMLTextAreaElement>(null);
-  
   // Toast 功能
-  const { toasts, removeToast, showSuccess, showError, showInfo } = useToast();
+  const { dismiss, showSuccess, showError, showInfo } = useToast();
 
   // 键盘快捷键处理
   useEffect(() => {
@@ -589,7 +588,7 @@ ${result.notes ? `备注：${result.notes}` : ''}
         <EnhancedLoadingSpinner isLoading={isLoading} />
         
         {/* Toast Container */}
-        <ToastContainer toasts={toasts} onRemoveToast={removeToast} />
+        <ToastContainer />
         
         {/* 头部导航 - 类似ChatGPT风格 */}
         <div className="bg-[#111827] border-b border-[#374151] glass-effect">
