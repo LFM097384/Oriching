@@ -1,5 +1,5 @@
 // filepath: d:\项目\占卜网站\占卜\frontend\src\components\DivinationWorkbench.tsx
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from './ui/input';
@@ -184,16 +184,27 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
     }
   }, [result]);
 
-  // 通知复制功能
-  const copyToClipboard = useCallback(async (text: string, successMessage: string = '已复制到剪贴板') => {
+  // 复制到剪贴板
+  const copyToClipboard = async (text: string, successMessage: string) => {
     try {
       await navigator.clipboard.writeText(text);
       showSuccess('复制成功', successMessage);
-    } catch (err) {
-      showError('复制失败', '无法访问剪贴板');
-      console.error('复制失败:', err);
+    } catch (error) {
+      console.error('复制失败:', error);
+      // 如果现代API不可用，使用传统方法
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showSuccess('复制成功', successMessage);
+      } catch (fallbackError) {
+        showError('复制失败', '无法复制到剪贴板');
+      }
+      document.body.removeChild(textArea);
     }
-  }, [showSuccess, showError]);
+  };
 
   // 处理查看历史记录的情况
   useEffect(() => {
@@ -844,10 +855,13 @@ ${result.notes ? `备注：${result.notes}` : ''}
                   {selectedView === 'changed' && result.changedHexagram && renderHexagram(result.changedHexagram)}
                   {selectedView === 'mutual' && result.mutualHexagram && renderHexagram(result.mutualHexagram)}
                 </CardContent>
-              </Card>
+              </Card>              {/* 卦辞和象辞 - 移到中间栏 */}
+              {selectedView === 'original' && renderHexagramDetails(result.originalHexagram)}
+              {selectedView === 'changed' && result.changedHexagram && renderHexagramDetails(result.changedHexagram)}
+              {selectedView === 'mutual' && result.mutualHexagram && renderHexagramDetails(result.mutualHexagram)}
 
               {/* 解释 - 中心展示 */}
-              <Card className="bg-[#1e293b] border-[#374151]">
+              <Card className="bg-[#1e293b] border-[#374151] mt-4">
                 <CardHeader>
                   <CardTitle className="text-white/90 flex items-center gap-2">
                     <Lightbulb className="h-5 w-5" />
@@ -871,21 +885,42 @@ ${result.notes ? `备注：${result.notes}` : ''}
               </div>
             </div>
           )}
-        </div>
-
-        {/* 右侧辅助信息栏 - 新增区域 */}
+        </div>        {/* 右侧AI解卦对话栏 - 新功能区域 */}
         <div className="w-[280px] lg:w-[320px] xl:w-[360px] bg-[#111827] border-l border-[#374151] flex flex-col overflow-y-auto glass-effect shrink-0">
           {result ? (
             <div className="flex flex-col h-full">
-              {/* 卦象详细信息 */}
-              <div className="p-4 border-b border-[#374151]">
+              {/* AI解卦对话区域 */}
+              <div className="p-4 border-b border-[#374151] flex-1">
                 <h3 className="text-sm font-medium text-white/90 mb-3 flex items-center gap-2">
-                  <Eye className="h-4 w-4" />
-                  详细信息
+                  <Sparkles className="h-4 w-4" />
+                  AI解卦助手
                 </h3>
-                {selectedView === 'original' && renderHexagramDetails(result.originalHexagram)}
-                {selectedView === 'changed' && result.changedHexagram && renderHexagramDetails(result.changedHexagram)}
-                {selectedView === 'mutual' && result.mutualHexagram && renderHexagramDetails(result.mutualHexagram)}
+                <div className="space-y-3 text-sm">
+                  {/* AI对话消息区域 */}
+                  <div className="bg-[#1e293b] p-3 rounded border border-[#374151] min-h-[300px] max-h-[400px] overflow-y-auto">
+                    <div className="text-white/70 text-center py-8">
+                      <Sparkles className="h-8 w-8 mx-auto mb-3 opacity-50" />
+                      <p>AI解卦功能即将推出</p>
+                      <p className="text-xs mt-2">将为您提供个性化的卦象解读</p>
+                    </div>
+                  </div>
+                  
+                  {/* AI对话输入框 */}
+                  <div className="flex gap-2">
+                    <Input
+                      placeholder="询问AI关于这个卦象..."
+                      className="bg-[#1e293b] border-[#374151] text-white placeholder-white/50 text-sm flex-1"
+                      disabled
+                    />
+                    <Button
+                      size="sm"
+                      className="bg-[#4f46e5] hover:bg-[#4338ca] px-3"
+                      disabled
+                    >
+                      <Zap className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
               </div>
 
               {/* 备注和保存 */}
@@ -909,7 +944,7 @@ ${result.notes ? `备注：${result.notes}` : ''}
               </div>
 
               {/* 快速操作 */}
-              <div className="p-4 border-b border-[#374151] flex-1">
+              <div className="p-4">
                 <h3 className="text-sm font-medium text-white/90 mb-3">快速操作</h3>
                 <div className="space-y-2">
                   <Button
@@ -953,44 +988,28 @@ ${result.notes ? `备注：${result.notes}` : ''}
                   </Button>
                 </div>
               </div>
-
-              {/* 历史记录预览 */}
-              <div className="p-4">
-                <h3 className="text-sm font-medium text-white/90 mb-3">最近占卜</h3>
-                <div className="space-y-2">
-                  {[1, 2, 3].map((i) => (
-                    <div key={i} className="bg-[#1e293b] p-2 rounded border border-[#374151] cursor-pointer hover:bg-[#374151]/30 transition-colors">
-                      <div className="text-white/80 text-xs truncate">示例问题 {i}</div>
-                      <div className="text-white/60 text-xs">乾为天 • 今天</div>
-                    </div>
-                  ))}
-                  <Button
-                    onClick={onNavigateToHistory}
-                    className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm mt-2"
-                    variant="outline"
-                    size="sm"
-                  >
-                    <History className="h-4 w-4 mr-2" />
-                    查看全部历史
-                  </Button>
-                </div>
-              </div>
             </div>
           ) : (
             <div className="p-4">
-              <h3 className="text-sm font-medium text-white/90 mb-3">占卜指南</h3>
+              <h3 className="text-sm font-medium text-white/90 mb-3 flex items-center gap-2">
+                <Sparkles className="h-4 w-4" />
+                AI解卦助手
+              </h3>
               <div className="space-y-3 text-white/70 text-sm">
-                <div className="bg-[#1e293b] p-3 rounded border border-[#374151]">
-                  <h4 className="text-white/90 font-medium mb-2">如何提问</h4>
-                  <p>问题应该具体明确，避免过于宽泛或模糊的表述。</p>
+                <div className="bg-[#1e293b] p-3 rounded border border-[#374151] text-center py-8">
+                  <Sparkles className="h-8 w-8 mx-auto mb-3 opacity-50" />
+                  <p>完成占卜后</p>
+                  <p>AI将为您提供智能解读</p>
                 </div>
+                
                 <div className="bg-[#1e293b] p-3 rounded border border-[#374151]">
-                  <h4 className="text-white/90 font-medium mb-2">起卦方式</h4>
-                  <p>可选择传统蓍草法、铜钱法或现代时间起卦法。</p>
-                </div>
-                <div className="bg-[#1e293b] p-3 rounded border border-[#374151]">
-                  <h4 className="text-white/90 font-medium mb-2">解读要点</h4>
-                  <p>关注本卦、变卦和互卦的综合含义，结合具体情况分析。</p>
+                  <h4 className="text-white/90 font-medium mb-2">AI功能预告</h4>
+                  <ul className="space-y-1 text-xs">
+                    <li>• 个性化卦象解读</li>
+                    <li>• 互动式问答</li>
+                    <li>• 深度分析建议</li>
+                    <li>• 历史对比参考</li>
+                  </ul>
                 </div>
               </div>
             </div>
