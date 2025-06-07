@@ -142,8 +142,7 @@ def get_hexagram_from_lines(lines: List[Line]) -> Hexagram:
         '1' if sorted_lines[0].type == 'yang' else '0',  # 第1爻（下卦底部）
         '1' if sorted_lines[1].type == 'yang' else '0',  # 第2爻（下卦中部）
         '1' if sorted_lines[2].type == 'yang' else '0'   # 第3爻（下卦顶部）
-    ])
-      # Find matching hexagram
+    ])    # Find matching hexagram
     hexagram = data_manager.get_hexagram_by_trigrams(upper_trigram, lower_trigram)
     
     if hexagram is None:
@@ -154,8 +153,32 @@ def get_hexagram_from_lines(lines: List[Line]) -> Hexagram:
         else:
             raise ValueError("无法找到对应的卦象")
     
-    # 重要：将爻线信息附加到卦象上，这样前端就能正确显示爻线和变爻
-    hexagram.lines = sorted_lines
+    # 重要：合并JSON中的爻辞信息到生成的爻线中，保持changing状态和position信息
+    if hexagram.lines and len(hexagram.lines) == 6:
+        # 创建新的爻线列表，保留changing状态但添加爻辞信息
+        enhanced_lines = []
+        for i, generated_line in enumerate(sorted_lines):
+            json_line = hexagram.lines[i]
+            # 创建增强的爻线，保留generated_line的changing状态，但添加JSON中的爻辞
+            enhanced_line = Line(
+                position=generated_line.position,
+                type=generated_line.type,
+                changing=generated_line.changing,
+                text=json_line.text if hasattr(json_line, 'text') else None,
+                explanation=json_line.explanation if hasattr(json_line, 'explanation') else None,
+                image=json_line.image if hasattr(json_line, 'image') else None,
+                interpretations=json_line.interpretations if hasattr(json_line, 'interpretations') else None
+            )
+            enhanced_lines.append(enhanced_line)
+        
+        hexagram.lines = enhanced_lines
+    else:
+        # 如果JSON中没有爻线信息，使用生成的爻线
+        hexagram.lines = sorted_lines
+    
+    # 确保设置三爻信息
+    hexagram.upperTrigram = upper_trigram
+    hexagram.lowerTrigram = lower_trigram
     
     return hexagram
 
@@ -190,10 +213,8 @@ def get_changed_hexagram(lines: List[Line]) -> Optional[Hexagram]:
             type=new_type,
             changing=False  # Changed lines are no longer changing
         ))
-    
-    # Get the hexagram and attach the changed lines to it
+      # Get the hexagram using the changed lines - this will properly merge line text data
     changed_hexagram = get_hexagram_from_lines(changed_lines)
-    changed_hexagram.lines = changed_lines  # 重要：将变换后的爻线信息附加到变卦上
     
     return changed_hexagram
 
@@ -257,42 +278,62 @@ def generate_interpretation(
             
         interpretation_parts.append(f"变卦解释：{changed_description}")
         interpretation_parts.append("")
-    
-    # Detailed interpretations - 仅在属性存在时添加
+      # Detailed interpretations - 详细解读
     interpretation_parts.append("== 详细解读 ==")
     
+    # 卦象基本含义
+    if hasattr(original_hexagram, 'interpretations') and original_hexagram.interpretations and hasattr(original_hexagram.interpretations, 'traditional'):
+        if hasattr(original_hexagram.interpretations.traditional, 'description'):
+            interpretation_parts.append(f"🔮 卦象释义：{original_hexagram.interpretations.traditional.description}")
+    
+    # 运势各方面解读
     if hasattr(original_hexagram, 'fortune') and original_hexagram.fortune:
-        interpretation_parts.append(f"💰 运势：{original_hexagram.fortune}")
+        interpretation_parts.append(f"💰 总体运势：{original_hexagram.fortune}")
     
     if hasattr(original_hexagram, 'love') and original_hexagram.love:
-        interpretation_parts.append(f"💕 感情：{original_hexagram.love}")
+        interpretation_parts.append(f"💕 感情婚姻：{original_hexagram.love}")
     
     if hasattr(original_hexagram, 'career') and original_hexagram.career:
-        interpretation_parts.append(f"💼 事业：{original_hexagram.career}")
+        interpretation_parts.append(f"💼 事业工作：{original_hexagram.career}")
     
     if hasattr(original_hexagram, 'health') and original_hexagram.health:
-        interpretation_parts.append(f"🏥 健康：{original_hexagram.health}")
+        interpretation_parts.append(f"🏥 健康状况：{original_hexagram.health}")
     
-    interpretation_parts.append("")
-    
-    # Advice - 仅在属性存在时添加
-    if hasattr(original_hexagram, 'advice') and original_hexagram.advice:
-        interpretation_parts.append(f"💡 建议：{original_hexagram.advice}")
+    # 变爻解读
+    changing_lines = [line for line in lines if line.changing]
+    if changing_lines:
         interpretation_parts.append("")
+        interpretation_parts.append("📍 变爻指导：")
+        for line in changing_lines:
+            if hasattr(line, 'explanation') and line.explanation:
+                interpretation_parts.append(f"  第{line.position}爻：{line.explanation}")
     
+    # 行动建议
+    interpretation_parts.append("")
+    if hasattr(original_hexagram, 'advice') and original_hexagram.advice:
+        interpretation_parts.append(f"💡 行动建议：{original_hexagram.advice}")
+        
     # Additional guidance based on changed hexagram
     if changed_hexagram:
+        interpretation_parts.append("")
         interpretation_parts.append("== 变化趋势 ==")
-        interpretation_parts.append(f"当前局势正在向 {changed_hexagram.chineseName} 的方向发展。")
+        interpretation_parts.append(f"当前局势正在向【{changed_hexagram.chineseName}】的方向发展。")
         
+        # 变卦详细解读
+        if hasattr(changed_hexagram, 'interpretations') and changed_hexagram.interpretations and hasattr(changed_hexagram.interpretations, 'traditional'):
+            if hasattr(changed_hexagram.interpretations.traditional, 'description'):
+                interpretation_parts.append(f"🔄 变化含义：{changed_hexagram.interpretations.traditional.description}")
+        
+        # 变卦运势指向
+        if hasattr(changed_hexagram, 'fortune') and changed_hexagram.fortune:
+            interpretation_parts.append(f"📈 运势走向：{changed_hexagram.fortune}")
+            
         if hasattr(changed_hexagram, 'advice') and changed_hexagram.advice:
-            interpretation_parts.append(f"变化建议：{changed_hexagram.advice}")
+            interpretation_parts.append(f"🎯 应对策略：{changed_hexagram.advice}")
+            
+        # 变化时机提示
+        interpretation_parts.append(f"⏰ 变化提示：变爻显示变化正在发生，需要积极适应新的形势")
         
         interpretation_parts.append("")
-    
-    # Disclaimer
-    interpretation_parts.append("== 温馨提示 ==")
-    interpretation_parts.append("此占卜结果仅供参考，请结合实际情况理性判断。")
-    interpretation_parts.append("重要决策建议咨询相关专业人士。")
     
     return "\n".join(interpretation_parts)

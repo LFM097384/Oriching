@@ -520,8 +520,10 @@ ${result.notes ? `备注：${result.notes}` : ''}
       const conversationHistory = aiMessages.map(msg => ({
         role: msg.role,
         content: msg.content
-      }));      // 调用后端AI接口
-      const response = await fetch('http://localhost:8000/api/divination/ai-chat', {
+      }));
+
+      // 调用后端AI接口
+      const response = await fetch('/api/divination/ai-chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
