@@ -1,0 +1,203 @@
+/**
+ * API 客户端 - 与后端占卜 API 通信
+ * 
+ * 包括基本占卜、AI增强占卜、缓存管理等功能
+ */
+
+const API_BASE_URL = 'http://localhost:8000/api';
+
+// API 超时设置（毫秒）
+const API_TIMEOUT = 30000;
+
+/**
+ * 带超时的 fetch 包装
+ */
+const fetchWithTimeout = async (url: string, options: RequestInit = {}) => {
+  const controller = new AbortController();
+  const { signal } = controller;
+  
+  // 设置超时
+  const timeout = setTimeout(() => controller.abort(), API_TIMEOUT);
+  
+  try {
+    const response = await fetch(url, { ...options, signal });
+    clearTimeout(timeout);
+    
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ detail: "未知错误" }));
+      throw new Error(errorData.detail || `请求失败: ${response.status}`);
+    }
+    
+    return response;
+  } catch (error: any) {
+    clearTimeout(timeout);
+    if (error.name === 'AbortError') {
+      throw new Error('请求超时，请稍后重试');
+    }
+    throw error;
+  }
+};
+
+// API 响应类型定义
+export interface ApiLine {
+  position: number;
+  type: 'yang' | 'yin';
+  changing: boolean;
+  text: string;
+  explanation: string;
+  image: {
+    text: string;
+    explanation: string;
+  };
+  interpretations: {
+    shaoYong?: any;
+    fuPeiRong?: any;
+  };
+  changes_to: {
+    number?: number;
+    name: string;
+    description: string;
+  };
+}
+
+export interface ApiHexagram {
+  number: number;
+  name: string;
+  chineseName: string;
+  symbol: string;
+  description: string;
+  judgment: {
+    text: string;
+    explanation: string;
+  };
+  image: {
+    text: string;
+    explanation: string;
+  };
+  interpretations: {
+    shaoYong?: any;
+    fuPeiRong?: any;
+  };
+  lines: ApiLine[];
+}
+
+export interface ApiDivinationResult {
+  originalHexagram: ApiHexagram;
+  changedHexagram?: ApiHexagram;
+  lines: ApiLine[];
+  question: string;
+  timestamp: string;
+  interpretation: string;
+  ai_provider?: string | null;
+}
+
+export interface DivinationRequest {
+  question: string;
+  ai_provider?: string;
+}
+
+/**
+ * 执行占卜 - 使用传统解读
+ */
+export async function performDivination(question: string): Promise<ApiDivinationResult> {
+  const response = await fetchWithTimeout(`${API_BASE_URL}/divination`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ question }),
+  });
+
+  return response.json();
+}
+
+/**
+ * 执行占卜 - 使用AI增强解读
+ * @param question 占卜问题
+ * @param ai_provider AI提供者，可选值: 'openai' 或 'deepseek'
+ */
+export async function performAIDivination(
+  question: string, 
+  ai_provider: string = 'openai'
+): Promise<ApiDivinationResult> {
+  const response = await fetchWithTimeout(`${API_BASE_URL}/divination/ai`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ question, ai_provider }),
+  });
+
+  return response.json();
+}
+
+/**
+ * 获取占卜帮助信息
+ */
+export async function getDivinationHelp(): Promise<any> {
+  const response = await fetch(`${API_BASE_URL}/divination/help`);
+  
+  if (!response.ok) {
+    throw new Error('获取帮助信息失败');
+  }
+
+  return response.json();
+}
+
+/**
+ * 获取所有卦象列表
+ */
+export async function getAllHexagrams(): Promise<ApiHexagram[]> {
+  const response = await fetch(`${API_BASE_URL}/hexagrams`);
+  
+  if (!response.ok) {
+    throw new Error('获取卦象列表失败');
+  }
+
+  return response.json();
+}
+
+/**
+ * 根据编号获取卦象详情
+ */
+export async function getHexagramByNumber(number: number): Promise<ApiHexagram> {
+  const response = await fetch(`${API_BASE_URL}/hexagrams/${number}`);
+  
+  if (!response.ok) {
+    throw new Error('获取卦象详情失败');
+  }
+
+  return response.json();
+}
+
+/**
+ * 检查 AI 服务状态
+ * 返回 AI 连接状态和缓存信息
+ */
+export async function checkAIStatus(): Promise<any> {
+  const response = await fetchWithTimeout(`${API_BASE_URL}/divination/ai/status`);
+  return response.json();
+}
+
+/**
+ * 清除 AI 解读缓存
+ */
+export async function clearAICache(): Promise<any> {
+  const response = await fetchWithTimeout(`${API_BASE_URL}/divination/ai/cache`, {
+    method: 'DELETE'
+  });
+  return response.json();
+}
+
+/**
+ * 根据名称搜索卦象
+ */
+export async function searchHexagramsByName(name: string): Promise<ApiHexagram[]> {
+  const response = await fetch(`${API_BASE_URL}/hexagrams/search/${encodeURIComponent(name)}`);
+  
+  if (!response.ok) {
+    throw new Error('搜索卦象失败');
+  }
+
+  return response.json();
+}

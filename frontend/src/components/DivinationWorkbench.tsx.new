@@ -1,0 +1,834 @@
+// filepath: d:\项目\占卜网站\占卜\frontend\src\components\DivinationWorkbench.tsx
+import React, { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from './ui/input';
+import { Label } from './ui/label';
+import { Textarea } from './ui/textarea';
+import { Badge } from './ui/badge';
+import DivinationMethodSelector from './DivinationMethodSelector';
+import type { DivinationMethod, DivinationInputResult } from './DivinationMethodSelector';
+import { 
+  Download, 
+  RefreshCw, 
+  Coins, 
+  Eye, 
+  Calendar,
+  FileText,
+  Sparkles,
+  Lightbulb,
+  ArrowLeft,
+  Settings,
+  History,
+  MoreHorizontal,
+  Send
+} from 'lucide-react';
+
+// 类型定义
+interface TextExplanation {
+  text: string;
+  explanation: string;
+}
+
+interface LineInterpretations {
+  traditional?: TextExplanation;
+  shaoYong?: any;
+  fuPeiRong?: any;
+  zhangMingRen?: any;
+}
+
+interface HexagramInterpretations {
+  traditional?: { description: string };
+  shaoYong?: any;
+  fuPeiRong?: any;
+  zhangMingRen?: any;
+}
+
+interface Line {
+  position: number;
+  type: 'yang' | 'yin';
+  changing: boolean;
+  text?: string;
+  explanation?: string;
+  image?: TextExplanation;
+  interpretations?: LineInterpretations;
+}
+
+interface Hexagram {
+  number: number;
+  name: string;
+  chineseName: string;
+  symbol: string;
+  upperTrigram: string;
+  lowerTrigram: string;
+  kingWen?: TextExplanation;
+  image?: TextExplanation;
+  interpretations?: HexagramInterpretations;
+  lines?: Line[];
+}
+
+interface ChangeInfo {
+  hasChanges: boolean;
+  changingLines: number[];
+  changedHexagram?: Hexagram;
+}
+
+interface DivinationResult {
+  question: string;
+  originalHexagram: Hexagram;
+  changedHexagram?: Hexagram;
+  mutualHexagram?: Hexagram;
+  lines: Line[];
+  timestamp: string;
+  interpretation: string;
+  divinerName?: string;
+  notes?: string;
+  changeInfo?: ChangeInfo;
+}
+
+interface DivinationWorkbenchProps {
+  onNavigateToLanding?: () => void;
+  onNavigateToHistory?: () => void;
+  onNavigateToSettings?: () => void;
+  viewingRecord?: DivinationRecord | null;
+  onClearViewingRecord?: () => void;
+}
+
+interface DivinationRecord {
+  id: string;
+  question: string;
+  originalHexagram: {
+    number: number;
+    name: string;
+    chineseName: string;
+    symbol: string;
+  };
+  changedHexagram?: {
+    number: number;
+    name: string;
+    chineseName: string;
+    symbol: string;
+  };
+  divinerName?: string;
+  timestamp: string;
+  notes?: string;
+  changingLinesCount: number;
+}
+
+const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({ 
+  onNavigateToLanding,
+  onNavigateToHistory,
+  onNavigateToSettings,
+  viewingRecord,
+  onClearViewingRecord
+}) => {
+  const [question, setQuestion] = useState('');
+  const [divinerName, setDivinerName] = useState('');
+  const [result, setResult] = useState<DivinationResult | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [notes, setNotes] = useState('');
+  const [selectedView, setSelectedView] = useState<'original' | 'changed' | 'mutual'>('original');
+  
+  // 起卦方法相关状态
+  const [selectedMethod, setSelectedMethod] = useState<DivinationMethod>('coins');
+  const [divinationInput, setDivinationInput] = useState<DivinationInputResult | null>(null);
+
+  // 处理查看历史记录的情况
+  useEffect(() => {
+    if (viewingRecord && onClearViewingRecord) {
+      // 根据历史记录模拟结果显示
+      const mockResult: DivinationResult = {
+        question: viewingRecord.question,
+        originalHexagram: {
+          number: viewingRecord.originalHexagram.number,
+          name: viewingRecord.originalHexagram.name,
+          chineseName: viewingRecord.originalHexagram.chineseName,
+          symbol: viewingRecord.originalHexagram.symbol,
+          upperTrigram: '',
+          lowerTrigram: '',
+        },
+        lines: [],
+        timestamp: viewingRecord.timestamp,
+        interpretation: '这是历史记录查看，详细解释请查看原始占卜结果。',
+        divinerName: viewingRecord.divinerName,
+        notes: viewingRecord.notes,
+      };
+      
+      if (viewingRecord.changedHexagram) {
+        mockResult.changedHexagram = {
+          ...viewingRecord.changedHexagram,
+          upperTrigram: '',
+          lowerTrigram: '',
+        };
+      }
+      
+      setResult(mockResult);
+      setQuestion(viewingRecord.question);
+      setDivinerName(viewingRecord.divinerName || '');
+      setNotes(viewingRecord.notes || '');
+    }
+  }, [viewingRecord, onClearViewingRecord]);
+
+  // 处理起卦输入结果
+  const handleDivinationInput = (inputResult: DivinationInputResult) => {
+    setDivinationInput(inputResult);
+  };
+  // 执行占卜
+  const performDivination = async () => {
+    if (!question.trim()) {
+      alert('请输入您的问题');
+      return;
+    }
+
+    setIsLoading(true);
+    
+    try {
+      // 调用后端API进行占卜
+      const response = await fetch('http://localhost:8000/api/divination', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          question: question.trim()
+        }),
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || '占卜请求失败');
+      }
+
+      const data = await response.json();
+      
+      // 计算互卦
+      const mutualHexagram = calculateMutualHexagram(data.originalHexagram);
+      
+      // 转换后端数据格式为前端需要的格式
+      const processedResult: DivinationResult = {
+        question: data.question,
+        originalHexagram: data.originalHexagram,
+        changedHexagram: data.changedHexagram,
+        mutualHexagram,
+        lines: data.lines,
+        timestamp: new Date(data.timestamp).toISOString(),
+        interpretation: data.interpretation,
+        divinerName: divinerName || '匿名',
+        notes: '',
+        changeInfo: {
+          hasChanges: data.changedHexagram ? true : false,
+          changingLines: data.lines.filter((line: Line) => line.changing).map((line: Line) => line.position),
+          changedHexagram: data.changedHexagram
+        }
+      };
+      
+      setResult(processedResult);
+    } catch (error) {
+      console.error('占卜错误:', error);
+      alert(error instanceof Error ? error.message : '占卜过程中发生错误，请重试');
+      
+      // 使用模拟数据作为后备方案
+      const mockResult = generateMockResult();
+      setResult(mockResult);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // 计算互卦
+  const calculateMutualHexagram = (hexagram: Hexagram): Hexagram => {
+    if (!hexagram.lines || hexagram.lines.length !== 6) {
+      return hexagram;
+    }
+    
+    // 取2、3、4爻组成下卦，3、4、5爻组成上卦
+    const lowerMutual = [hexagram.lines[1], hexagram.lines[2], hexagram.lines[3]]
+      .map(line => line.type === 'yang' ? '1' : '0').join('');
+    const upperMutual = [hexagram.lines[2], hexagram.lines[3], hexagram.lines[4]]
+      .map(line => line.type === 'yang' ? '1' : '0').join('');
+    
+    // 这里简化处理，实际应该通过卦象查找对应的卦
+    return {
+      ...hexagram,
+      number: 99, // 临时编号
+      name: '互卦',
+      chineseName: '互卦',
+      upperTrigram: upperMutual,
+      lowerTrigram: lowerMutual,
+    };
+  };
+
+  // 生成模拟结果（作为后备）
+  const generateMockResult = (): DivinationResult => {
+    const lines: Line[] = Array.from({ length: 6 }, (_, i) => ({
+      position: i + 1,
+      type: Math.random() > 0.5 ? 'yang' : 'yin',
+      changing: Math.random() > 0.8,
+      text: `第${i + 1}爻爻辞`,
+      explanation: `第${i + 1}爻的详细解释...`,
+    }));
+
+    const originalHexagram: Hexagram = {
+      number: 1,
+      name: '乾卦',
+      chineseName: '乾為天',
+      symbol: '☰',
+      upperTrigram: '111',
+      lowerTrigram: '111',
+      kingWen: {
+        text: '乾。元亨利貞。',
+        explanation: '乾卦：大吉大利，吉利的貞卜。'
+      },
+      image: {
+        text: '天行健，君子以自強不息。',
+        explanation: '天道剛健，運行不已。君子觀此卦象，從而以天為法，自強不息。'
+      },
+      interpretations: {
+        traditional: {
+          description: '乾卦是純陽之卦，象徵天道剛健...'
+        }
+      },
+      lines
+    };
+
+    const mutualHexagram = calculateMutualHexagram(originalHexagram);
+
+    return {
+      question: question,
+      originalHexagram,
+      mutualHexagram,
+      lines,
+      timestamp: new Date().toISOString(),
+      interpretation: '这是一个模拟的占卜结果。请检查后端连接是否正常。',
+      divinerName: divinerName || '匿名',
+      notes: '',
+      changeInfo: {
+        hasChanges: false,
+        changingLines: [],
+      }
+    };
+  };
+
+  // 下载结果
+  const downloadResult = () => {
+    if (!result) return;
+    
+    const content = generateReportContent(result);
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `易经占卜结果_${new Date().toISOString().slice(0, 10)}.txt`;
+    link.click();
+  };
+
+  // 生成报告内容
+  const generateReportContent = (result: DivinationResult): string => {
+    const timestamp = new Date(result.timestamp).toLocaleString();
+    return `易经占卜结果报告
+
+问题：${result.question}
+占卜师：${result.divinerName || '匿名'}
+时间：${timestamp}
+
+本卦：${result.originalHexagram.chineseName} (${result.originalHexagram.name})
+${result.changedHexagram ? `变卦：${result.changedHexagram.chineseName} (${result.changedHexagram.name})` : ''}
+
+解释：
+${result.interpretation}
+
+${result.notes ? `备注：${result.notes}` : ''}
+
+---
+此报告由易经占卜工作台生成
+`;
+  };
+
+  // 保存到历史记录
+  const saveToHistory = () => {
+    if (!result) return;
+    
+    const record: DivinationRecord = {
+      id: Date.now().toString(),
+      question: result.question,
+      originalHexagram: {
+        number: result.originalHexagram.number,
+        name: result.originalHexagram.name,
+        chineseName: result.originalHexagram.chineseName,
+        symbol: result.originalHexagram.symbol,
+      },
+      divinerName: result.divinerName,
+      timestamp: result.timestamp,
+      notes: result.notes,
+      changingLinesCount: result.lines?.filter(line => line.changing).length || 0,
+    };
+
+    if (result.changedHexagram) {
+      record.changedHexagram = {
+        number: result.changedHexagram.number,
+        name: result.changedHexagram.name,
+        chineseName: result.changedHexagram.chineseName,
+        symbol: result.changedHexagram.symbol,
+      };
+    }
+
+    // 保存到localStorage
+    const existingRecords = JSON.parse(localStorage.getItem('divinationHistory') || '[]');
+    existingRecords.unshift(record);
+    
+    // 只保留最近100条记录
+    if (existingRecords.length > 100) {
+      existingRecords.splice(100);
+    }
+    
+    localStorage.setItem('divinationHistory', JSON.stringify(existingRecords));
+    alert('已保存到历史记录');
+  };
+
+  // 重置占卜
+  const resetDivination = () => {
+    setQuestion('');
+    setResult(null);
+    setNotes('');
+    setSelectedView('original');
+    setDivinationInput(null);
+    setDivinerName('');
+    if (onClearViewingRecord) {
+      onClearViewingRecord();
+    }
+  };
+
+  // 渲染卦象
+  const renderHexagram = (hexagram: Hexagram) => {
+    if (!hexagram.lines || hexagram.lines.length === 0) {
+      // 如果没有爻的详细信息，使用简化显示
+      return (
+        <div className="text-center">
+          <div className="text-6xl mb-4">{hexagram.symbol}</div>
+          <div className="text-xl font-bold">{hexagram.chineseName}</div>
+          <div className="text-lg text-white/70">{hexagram.name}</div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="space-y-4">
+        <div className="text-center">
+          <div className="text-6xl mb-4">{hexagram.symbol}</div>
+          <div className="text-xl font-bold">{hexagram.chineseName}</div>
+          <div className="text-lg text-white/70">{hexagram.name}</div>
+        </div>
+        
+        <div className="space-y-2">
+          {hexagram.lines.slice().reverse().map((line) => (
+            <div key={line.position} className="flex items-center gap-4">
+              <div className="flex-1">
+                <div className={`h-4 border-2 ${
+                  line.type === 'yang' 
+                    ? 'border-yellow-500 bg-yellow-200' 
+                    : 'border-blue-500 bg-blue-200 border-dashed'
+                } ${line.changing ? 'animate-pulse' : ''}`} />
+              </div>
+              <div className="w-8 text-sm font-mono">{line.position}</div>
+              {line.changing && (
+                <Badge variant="destructive" className="text-xs">
+                  变
+                </Badge>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  // 渲染卦象详细信息
+  const renderHexagramDetails = (hexagram: Hexagram) => {
+    return (
+      <div className="space-y-6">
+        {hexagram.kingWen && (
+          <Card className="bg-[#1e293b] border-[#374151]">
+            <CardHeader>
+              <CardTitle className="text-white/90 flex items-center gap-2">
+                <FileText className="h-5 w-5" />
+                卦辞
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="font-semibold text-white">{hexagram.kingWen.text}</div>
+                <div className="text-white/70">{hexagram.kingWen.explanation}</div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {hexagram.image && (
+          <Card className="bg-[#1e293b] border-[#374151]">
+            <CardHeader>
+              <CardTitle className="text-white/90 flex items-center gap-2">
+                <Eye className="h-5 w-5" />
+                象辞
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="font-semibold text-white">{hexagram.image.text}</div>
+                <div className="text-white/70">{hexagram.image.explanation}</div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {hexagram.lines && hexagram.lines.some(line => line.text) && (
+          <Card className="bg-[#1e293b] border-[#374151]">
+            <CardHeader>
+              <CardTitle className="text-white/90 flex items-center gap-2">
+                <Lightbulb className="h-5 w-5" />
+                爻辞
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {hexagram.lines.map((line) => (
+                  line.text && (
+                    <div key={line.position} className="border-l-4 border-[#3b82f6] pl-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="text-sm font-mono bg-[#334155] px-2 py-1 rounded text-white/80">
+                          第{line.position}爻
+                        </div>
+                        {line.changing && (
+                          <Badge variant="destructive" className="text-xs">
+                            变爻
+                          </Badge>
+                        )}
+                      </div>
+                      <div className="font-semibold mb-1 text-white">{line.text}</div>
+                      {line.explanation && (
+                        <div className="text-white/70 text-sm">{line.explanation}</div>
+                      )}
+                    </div>
+                  )
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+      </div>
+    );
+  };
+
+  return (
+    <div className="h-screen flex flex-col bg-[#0f172a] overflow-hidden">
+      {/* 头部导航 - 类似ChatGPT风格 */}
+      <div className="bg-[#111827] border-b border-[#374151]">
+        <div className="flex items-center justify-between h-14 px-4">
+          <div className="flex items-center gap-3">
+            {viewingRecord && onClearViewingRecord ? (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onClearViewingRecord}
+                className="text-white/80 hover:bg-white/10 hover:text-white"
+              >
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                返回
+              </Button>
+            ) : (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onNavigateToLanding}
+                className="text-white/80 hover:bg-white/10 hover:text-white"
+              >
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                回到首页
+              </Button>
+            )}
+            <h1 className="text-lg font-medium text-white">易经占卜工作台</h1>
+          </div>
+          
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={onNavigateToHistory}
+              className="text-white/80 hover:bg-white/10 hover:text-white"
+            >
+              <History className="h-4 w-4 mr-2" />
+              历史记录
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={onNavigateToSettings}
+              className="text-white/80 hover:bg-white/10 hover:text-white"
+            >
+              <Settings className="h-4 w-4" />
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* 主体内容区域 - 采用左侧工具栏+右侧主内容的布局 */}
+      <div className="flex flex-1 h-[calc(100vh-3.5rem)] overflow-hidden">
+        {/* 左侧工具栏 */}
+        <div className="w-[280px] bg-[#111827] border-r border-[#374151] flex flex-col overflow-y-auto">
+          {/* 问题输入 */}
+          <div className="p-4 border-b border-[#374151]">
+            <h2 className="text-sm font-medium text-white/90 mb-2 flex items-center gap-2">
+              <FileText className="h-4 w-4" />
+              提出问题
+            </h2>
+            <Textarea
+              id="question"
+              placeholder="请输入您想要占卜的问题..."
+              value={question}
+              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setQuestion(e.target.value)}
+              className="bg-[#1e293b] border-[#374151] text-white placeholder-white/50 text-sm resize-none"
+              rows={4}
+            />
+            
+            <div className="mt-3">
+              <Label htmlFor="diviner" className="text-sm text-white/80 mb-1 block">占卜师姓名（可选）</Label>
+              <Input
+                id="diviner"
+                placeholder="请输入姓名..."
+                value={divinerName}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDivinerName(e.target.value)}
+                className="bg-[#1e293b] border-[#374151] text-white placeholder-white/50 text-sm h-8"
+              />
+            </div>
+          </div>
+
+          {/* 起卦方式选择器 */}
+          <div className="p-4 border-b border-[#374151]">
+            <h2 className="text-sm font-medium text-white/90 mb-2 flex items-center gap-2">
+              <Coins className="h-4 w-4" />
+              选择起卦方式
+            </h2>
+            <DivinationMethodSelector
+              selectedMethod={selectedMethod}
+              onMethodChange={setSelectedMethod}
+              onGenerate={handleDivinationInput}
+              isLoading={isLoading}
+            />
+          </div>
+
+          {/* 起卦结果显示 */}
+          {divinationInput && (
+            <div className="p-4 border-b border-[#374151]">
+              <h2 className="text-sm font-medium text-white/90 mb-2 flex items-center gap-2">
+                <Sparkles className="h-4 w-4" />
+                起卦结果
+              </h2>
+              <div className="text-white">
+                <div className="text-xs text-white/70 mb-2">
+                  起卦方法：{divinationInput.method === 'coins' ? '三枚铜钱法' : 
+                          divinationInput.method === 'yarrow' ? '蓍草法' : 
+                          divinationInput.method === 'number' ? '数字起卦' : '时间起卦'}
+                </div>
+                <div className="font-mono text-sm bg-[#1e293b] p-2 rounded">
+                  {divinationInput.values.join(' - ')}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* 操作按钮区域 */}
+          <div className="p-4 mt-auto border-t border-[#374151]">
+            <button
+              onClick={() => {
+                performDivination();
+                console.log('开始占卜按钮被点击了!');
+              }}
+              disabled={isLoading || !question.trim()}
+              className="w-full py-2 flex items-center justify-center gap-2 bg-[#4f46e5] hover:bg-[#4338ca] disabled:bg-[#4f46e5]/50 disabled:cursor-not-allowed text-white rounded-md"
+            >
+              {isLoading ? (
+                <>
+                  <RefreshCw className="h-4 w-4 animate-spin" />
+                  占卜中...
+                </>
+              ) : (
+                <>
+                  <Send className="h-4 w-4" />
+                  开始占卜
+                </>
+              )}
+            </button>
+            
+            <div className="flex justify-between mt-3">
+              <Button
+                onClick={resetDivination}
+                variant="outline"
+                size="sm"
+                className="bg-transparent border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white"
+              >
+                <RefreshCw className="h-4 w-4 mr-1" />
+                重置
+              </Button>
+              
+              {result && (
+                <Button
+                  onClick={downloadResult}
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white"
+                >
+                  <Download className="h-4 w-4 mr-1" />
+                  下载
+                </Button>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* 右侧主内容区域 */}
+        <div className="flex-1 overflow-y-auto p-4">
+          {result ? (
+            <div className="max-w-3xl mx-auto space-y-6">
+              {/* 问题和结果概要 */}
+              <div className="bg-[#1e293b] rounded-lg p-4 border border-[#374151]">
+                <h2 className="text-lg font-medium text-white mb-2">问题</h2>
+                <p className="text-white/90 mb-4 text-lg">{result.question}</p>
+                
+                <div className="flex flex-wrap gap-4 mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-white/70 text-sm">本卦:</span>
+                    <Badge className="bg-[#4f46e5]">{result.originalHexagram.chineseName}</Badge>
+                  </div>
+                  {result.changedHexagram && (
+                    <div className="flex items-center gap-2">
+                      <span className="text-white/70 text-sm">变卦:</span>
+                      <Badge className="bg-[#7c3aed]">{result.changedHexagram.chineseName}</Badge>
+                    </div>
+                  )}
+                  <div className="flex items-center gap-2">
+                    <span className="text-white/70 text-sm">时间:</span>
+                    <span className="text-white/90 text-sm">{new Date(result.timestamp).toLocaleString()}</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* 卦象选择和显示 */}
+              <Card className="bg-[#1e293b] border-[#374151]">
+                <CardHeader className="pb-2">
+                  <div className="flex justify-between items-center">
+                    <CardTitle className="text-white/90">卦象</CardTitle>
+                    <div className="flex gap-1">
+                      <Button
+                        variant={selectedView === 'original' ? 'default' : 'outline'}
+                        size="sm"
+                        onClick={() => setSelectedView('original')}
+                        className={selectedView === 'original' 
+                          ? 'bg-[#4f46e5] hover:bg-[#4338ca]' 
+                          : 'bg-[#1e293b] border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white'
+                        }
+                      >
+                        本卦
+                      </Button>
+                      {result.changedHexagram && (
+                        <Button
+                          variant={selectedView === 'changed' ? 'default' : 'outline'}
+                          size="sm"
+                          onClick={() => setSelectedView('changed')}
+                          className={selectedView === 'changed' 
+                            ? 'bg-[#4f46e5] hover:bg-[#4338ca]' 
+                            : 'bg-[#1e293b] border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white'
+                          }
+                        >
+                          变卦
+                        </Button>
+                      )}
+                      {result.mutualHexagram && (
+                        <Button
+                          variant={selectedView === 'mutual' ? 'default' : 'outline'}
+                          size="sm"
+                          onClick={() => setSelectedView('mutual')}
+                          className={selectedView === 'mutual' 
+                            ? 'bg-[#4f46e5] hover:bg-[#4338ca]' 
+                            : 'bg-[#1e293b] border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white'
+                          }
+                        >
+                          互卦
+                        </Button>
+                      )}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="text-white">
+                  {selectedView === 'original' && renderHexagram(result.originalHexagram)}
+                  {selectedView === 'changed' && result.changedHexagram && renderHexagram(result.changedHexagram)}
+                  {selectedView === 'mutual' && result.mutualHexagram && renderHexagram(result.mutualHexagram)}
+                </CardContent>
+              </Card>
+
+              {/* 解释 */}
+              <Card className="bg-[#1e293b] border-[#374151]">
+                <CardHeader>
+                  <CardTitle className="text-white/90 flex items-center gap-2">
+                    <Lightbulb className="h-5 w-5" />
+                    解读
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-white whitespace-pre-wrap">{result.interpretation}</div>
+                </CardContent>
+              </Card>
+
+              {/* 卦象详细信息 */}
+              {selectedView === 'original' && renderHexagramDetails(result.originalHexagram)}
+              {selectedView === 'changed' && result.changedHexagram && renderHexagramDetails(result.changedHexagram)}
+              {selectedView === 'mutual' && result.mutualHexagram && renderHexagramDetails(result.mutualHexagram)}
+
+              {/* 备注 */}
+              <Card className="bg-[#1e293b] border-[#374151]">
+                <CardHeader>
+                  <CardTitle className="text-white/90">备注</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Textarea
+                    placeholder="添加您的备注..."
+                    value={notes}
+                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setNotes(e.target.value)}
+                    className="bg-[#1e293b] border-[#374151] text-white placeholder-white/50 resize-none"
+                  />
+                  <Button
+                    onClick={saveToHistory}
+                    className="mt-3 bg-[#10b981] hover:bg-[#059669]"
+                    size="sm"
+                  >
+                    <Calendar className="h-4 w-4 mr-2" />
+                    保存到历史
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          ) : (
+            <div className="flex items-center justify-center h-full">
+              <div className="text-center text-white/70 max-w-lg">
+                <Sparkles className="h-16 w-16 mx-auto mb-6 opacity-50" />
+                <h2 className="text-2xl font-semibold mb-4">开始占卜</h2>
+                <p className="mb-6">在左侧输入您的问题，选择起卦方式，然后点击"开始占卜"按钮。</p>
+                <div className="text-sm opacity-75">
+                  系统将根据古老的易经原理为您提供生活智慧和指导。
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* 调试信息 */}
+      {process.env.NODE_ENV === 'development' && (
+        <div className="absolute bottom-2 left-2 text-white/50 text-xs bg-black/30 p-1 rounded">
+          调试: 问题={question ? '已填写' : '未填写'}, 
+          起卦={divinationInput ? '已完成' : '未完成（后端自动起卦）'}, 
+          加载中={isLoading ? '是' : '否'}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default DivinationWorkbench;
