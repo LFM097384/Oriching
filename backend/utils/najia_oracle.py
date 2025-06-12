@@ -609,7 +609,6 @@ class NajiaOracle:
         """
         if not self.data:
             return {}
-        
         return {
             'original_hexagram': {
                 'name': self.data['name'],
@@ -631,6 +630,13 @@ class NajiaOracle:
             ],
             'hidden': self.data['hide'],
             'lunar_info': self.data['lunar'],
+            'time_info': {
+                'year_gz': self.data['lunar']['gz']['year'],
+                'month_gz': self.data['lunar']['gz']['month'],
+                'day_gz': self.data['lunar']['gz']['day'],
+                'hour_gz': self.data['lunar']['gz']['hour'],
+                'xunkong': self.data['lunar']['xkong'],
+            },
             'title': self.data['title'],
             'gender': self.data['gender'],
             'date': self.data['date'].isoformat() if self.data['date'] else '',

@@ -148,11 +148,9 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
   // AI聊天相关状态
   const [aiMessages, setAiMessages] = useState<Array<{id: string, role: 'user' | 'assistant', content: string, timestamp: Date}>>([]);
   const [aiInput, setAiInput] = useState('');
-  const [isAiLoading, setIsAiLoading] = useState(false);
-  // 纳甲功能相关状态
+  const [isAiLoading, setIsAiLoading] = useState(false);  // 纳甲功能相关状态
   const [includeNajia, setIncludeNajia] = useState(false);
   const [najiaResult, setNajiaResult] = useState<any>(null);
-  const [najiaDedicatedMode, setNajiaDedicatedMode] = useState(false);
 
   // Refs
   const questionTextareaRef = useRef<HTMLTextAreaElement>(null);
@@ -308,7 +306,8 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
     setDivinationInput(inputResult);
   };  // 执行占卜 - 增强版本
   const performDivination = async () => {
-    console.log('执行占卜函数被调用');
+    console.log('执行占卜函数被调用，纳甲模式:', includeNajia);
+    console.log('手动输入数据:', divinationInput);
     
     if (!question.trim()) {
       // 聚焦到问题输入框
@@ -318,50 +317,146 @@ const DivinationWorkbench: React.FC<DivinationWorkbenchProps> = ({
 
     setIsLoading(true);
     setAnimatedResult(false);
+    setResult(null);
+    setNajiaResult(null);
+    
     console.log('开始调用占卜API');
-      try {
+    try {
       // 添加随机延迟来模拟真实的网络请求
       await new Promise(resolve => setTimeout(resolve, 800 + Math.random() * 1200));
-        // 使用API服务调用后端，支持纳甲分析
-      const data = await api.performDivination(question.trim(), language, includeNajia);
-        console.log('API响应数据:', data);
-      
-      // 如果包含纳甲分析，保存纳甲结果
-      if (includeNajia && data.najia) {
-        setNajiaResult(data.najia);
-      }
-      
-      // 计算互卦
-      const mutualHexagram = calculateMutualHexagram(data.originalHexagram);
-      
-      // 转换后端数据格式为前端需要的格式
-      const processedResult: DivinationResult = {
-        question: data.question,
-        originalHexagram: data.originalHexagram,
-        changedHexagram: data.changedHexagram,
-        mutualHexagram,
-        lines: data.lines,
-        timestamp: new Date(data.timestamp).toISOString(),
-        interpretation: data.interpretation,
-        divinerName: divinerName || '匿名',
-        notes: '',
-        changeInfo: {
-          hasChanges: data.changedHexagram ? true : false,
-          changingLines: data.lines.filter((line: Line) => line.changing).map((line: Line) => line.position),
-          changedHexagram: data.changedHexagram
+
+      if (includeNajia) {
+        // 纳甲模式：只调用纳甲API
+        console.log('使用纳甲模式');
+        
+        // 处理手动输入的卦象数据
+        let hexagramData = null;
+        if (divinationInput && divinationInput.data && divinationInput.data.lines) {
+          hexagramData = { lines: divinationInput.data.lines };
+          console.log('使用手动输入的卦象数据:', hexagramData);
+        }        const najiaData = await api.performNajiaDivination(question.trim(), hexagramData);
+        console.log('纳甲API响应数据:', najiaData);
+        console.log('纳甲API响应数据类型:', typeof najiaData);
+        console.log('纳甲API响应数据键:', Object.keys(najiaData || {}));
+        
+        // 验证纳甲数据的完整性
+        if (!najiaData || typeof najiaData !== 'object') {
+          throw new Error('纳甲API返回数据格式错误');
+        }        // 兼容处理：如果返回的是旧格式（带najia_analysis），转换为新格式
+        let processedNajiaData = najiaData;
+        if (najiaData.najia_analysis && !najiaData.original_hexagram) {
+          console.log('检测到旧格式纳甲数据，进行转换...');
+          console.log('najia_analysis 内容:', najiaData.najia_analysis);
+          console.log('najia_analysis 键:', Object.keys(najiaData.najia_analysis || {}));
+          
+          // 提取纳甲分析数据
+          const analysisData = najiaData.najia_analysis;
+            // 将旧格式转换为新格式
+          processedNajiaData = {
+            question: najiaData.question || question,
+            divination_time: najiaData.timestamp || new Date().toISOString(),
+            original_hexagram: {
+              name: analysisData?.original_hexagram?.name || '乾为天',
+              palace: analysisData?.original_hexagram?.gong || '乾宫',
+              mark: analysisData?.original_hexagram?.mark || '',
+              type: analysisData?.original_hexagram?.type || '',
+              shiy: analysisData?.original_hexagram?.shiy || [],
+              lines: analysisData?.lines || []
+            },            ganzhi_time: {
+              year_gz: analysisData?.time_info?.year_gz || '甲子',
+              month_gz: analysisData?.time_info?.month_gz || '甲子', 
+              day_gz: analysisData?.time_info?.day_gz || '甲子',
+              hour_gz: analysisData?.time_info?.hour_gz || '甲子',
+              xunkong: analysisData?.time_info?.xunkong || ['戌', '亥']
+            },            traditional_interpretation: najiaData.interpretation || '',
+            detailed_analysis: analysisData || {},
+            timestamp: najiaData.timestamp || new Date().toISOString(),
+            method: najiaData.method || 'auto'
+          };
         }
-      };
-      
-      console.log('处理后的结果:', processedResult);
-      setResult(processedResult);
+        
+        // 检查必要的字段
+        if (!processedNajiaData.question) {
+          console.warn('纳甲API返回数据缺少问题字段');
+        }
+        
+        if (!processedNajiaData.original_hexagram) {
+          console.warn('纳甲API返回数据缺少原卦信息');
+        }
+        
+        setNajiaResult(processedNajiaData);
+        console.log('纳甲结果设置成功');
+        // 纳甲模式下不设置传统占卜结果
+      } else {
+        // 传统模式：根据是否有手动输入决定调用哪个API
+        if (divinationInput && divinationInput.data && divinationInput.data.lines) {
+          // 有手动输入，调用手动占卜API
+          console.log('使用传统手动模式，卦象数据:', divinationInput.data.lines);
+          const data = await api.performManualDivination(question.trim(), divinationInput.data.lines, false, language);
+          console.log('传统手动API响应数据:', data);
+          
+          // 计算互卦
+          const mutualHexagram = calculateMutualHexagram(data.originalHexagram);
+          
+          // 转换后端数据格式为前端需要的格式
+          const processedResult: DivinationResult = {
+            question: data.question,
+            originalHexagram: data.originalHexagram,
+            changedHexagram: data.changedHexagram,
+            mutualHexagram,
+            lines: data.lines,
+            timestamp: new Date(data.timestamp).toISOString(),
+            interpretation: data.interpretation,
+            divinerName: divinerName || '匿名',
+            notes: '',
+            changeInfo: {
+              hasChanges: data.changedHexagram ? true : false,
+              changingLines: data.lines.filter((line: Line) => line.changing).map((line: Line) => line.position),
+              changedHexagram: data.changedHexagram
+            }
+          };
+          
+          setResult(processedResult);
+        } else {
+          // 没有手动输入，调用自动占卜API
+          console.log('使用传统自动模式');
+          const data = await api.performDivination(question.trim(), language, false);
+          console.log('传统自动API响应数据:', data);
+          
+          // 计算互卦
+          const mutualHexagram = calculateMutualHexagram(data.originalHexagram);
+          
+          // 转换后端数据格式为前端需要的格式
+          const processedResult: DivinationResult = {
+            question: data.question,
+            originalHexagram: data.originalHexagram,
+            changedHexagram: data.changedHexagram,
+            mutualHexagram,
+            lines: data.lines,
+            timestamp: new Date(data.timestamp).toISOString(),
+            interpretation: data.interpretation,
+            divinerName: divinerName || '匿名',
+            notes: '',
+            changeInfo: {
+              hasChanges: data.changedHexagram ? true : false,
+              changingLines: data.lines.filter((line: Line) => line.changing).map((line: Line) => line.position),
+              changedHexagram: data.changedHexagram
+            }
+          };
+          
+          setResult(processedResult);
+        }
+      }
     } catch (error) {
       console.error('占卜错误:', error);
       alert(error instanceof Error ? error.message : '占卜过程中发生错误，请重试');
       console.log('使用模拟数据作为后备...');
       
-      // 使用模拟数据作为后备方案
-      const mockResult = generateMockResult();
-      setResult(mockResult);
+      // 使用模拟数据作为后备方案（仅在传统模式下）
+      if (!includeNajia) {
+        const mockResult = generateMockResult();
+        setResult(mockResult);
+      }
     } finally {
       setIsLoading(false);
     }
@@ -472,6 +567,38 @@ ${result.notes ? `备注：${result.notes}` : ''}
 
 ---
 此报告由易经占卜工作台生成
+`;
+  };  // 生成纳甲报告内容
+  const generateNajiaReportContent = (najiaResult: any): string => {
+    if (!najiaResult) {
+      return '纳甲占卜数据不完整，无法生成报告。';
+    }
+    
+    const timestamp = najiaResult.divination_time ? new Date(najiaResult.divination_time).toLocaleString() : '未知时间';
+    const originalHexagram = najiaResult.original_hexagram || {};
+    const changedHexagram = najiaResult.changed_hexagram;
+    const ganzhiTime = najiaResult.ganzhi_time || {};
+    
+    return `纳甲六爻占卜结果报告
+
+问题：${najiaResult.question || '未提供问题'}
+时间：${timestamp}
+
+本卦：${originalHexagram.name || '未知'} (${originalHexagram.palace || '未知'}宫)
+${changedHexagram ? `变卦：${changedHexagram.name || '未知'} (${changedHexagram.palace || '未知'}宫)` : ''}
+
+干支时间：
+年：${ganzhiTime.year_gz || '未知'}
+月：${ganzhiTime.month_gz || '未知'}
+日：${ganzhiTime.day_gz || '未知'}
+时：${ganzhiTime.hour_gz || '未知'}
+旬空：${ganzhiTime.xunkong ? ganzhiTime.xunkong.join('、') : '未知'}
+
+纳甲解析：
+${najiaResult.traditional_interpretation || '暂无解析'}
+
+---
+此报告由纳甲六爻占卜工作台生成
 `;
   };
   // 保存到历史记录
@@ -682,10 +809,9 @@ ${result.notes ? `备注：${result.notes}` : ''}
                 {t.divination.lineExplanation}
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {hexagram.lines.map((line) => (
-                  line.text && (
+            <CardContent>              <div className="space-y-4">
+                {hexagram.lines.map((line) => 
+                  line.text ? (
                     <div key={line.position} className="border-l-4 border-[#3b82f6] pl-4">
                       <div className="flex items-center gap-2 mb-2">
                         <div className="text-sm font-mono bg-[#334155] px-2 py-1 rounded text-white/80">
@@ -702,15 +828,15 @@ ${result.notes ? `备注：${result.notes}` : ''}
                         <div className="text-white/70 text-sm">{line.explanation}</div>
                       )}
                     </div>
-                  )
-                ))}
+                  ) : null
+                )}
               </div>
             </CardContent>
           </Card>
         )}
       </div>
     );
-  };  return (
+  };return (
     <TooltipProvider>
       <div className="h-screen flex flex-col bg-[#0f172a] overflow-hidden dark-mode-enhanced">
         {/* Enhanced Loading Overlay */}
@@ -928,9 +1054,36 @@ ${result.notes ? `备注：${result.notes}` : ''}
                 </div>
               )}
             </div>
-          </div>        {/* 中间主内容区域 - 占卜结果显示 */}
-        <div className="flex-1 min-w-0 flex flex-col overflow-hidden">
-          {result ? (
+          </div>        {/* 中间主内容区域 - 占卜结果显示 */}        <div className="flex-1 min-w-0 flex flex-col overflow-hidden">
+          {/* 纳甲模式：只显示纳甲排盘 */}
+          {includeNajia && najiaResult ? (
+            <div className="flex-1 overflow-y-auto p-4">
+              <div className="space-y-4">
+                {/* 问题和结果概要 */}
+                <div className="bg-[#1e293b] rounded-lg p-4 border border-[#374151] mb-4">
+                  <h2 className="text-lg font-medium text-white mb-2">{t.divination.questionTitle}</h2>
+                  <p className="text-white/90 mb-3 text-base">{najiaResult.question}</p>
+                    <div className="flex flex-wrap gap-3">
+                    <Badge variant="outline" className="bg-purple-500/20 border-purple-500 text-purple-200">
+                      <Sparkles className="h-3 w-3 mr-1" />
+                      纳甲六爻排盘
+                    </Badge>
+                    {najiaResult.original_hexagram && (
+                      <Badge variant="outline" className="bg-amber-500/20 border-amber-500 text-amber-200">
+                        <Calendar className="h-3 w-3 mr-1" />
+                        {najiaResult.original_hexagram.name} ({najiaResult.original_hexagram.palace}宫)
+                      </Badge>
+                    )}
+                  </div>
+                </div>
+
+                {/* 纳甲分析结果 */}
+                <NajiaResult najiaResult={najiaResult} />
+              </div>
+            </div>
+          ) : (
+            /* 传统模式或无结果状态 */
+            result ? (
             <div className="flex-1 overflow-y-auto p-4">
               {/* 问题和结果概要 - 紧凑布局 */}
               <div className="bg-[#1e293b] rounded-lg p-4 border border-[#374151] mb-4">
@@ -1040,14 +1193,14 @@ ${result.notes ? `备注：${result.notes}` : ''}
                 </CardContent>
               </Card>
 
-              {/* 纳甲分析结果 */}
-              {najiaResult && (
+              {              /* 纳甲分析结果 */}              {najiaResult && (
                 <div className="mt-4">
                   <NajiaResult najiaResult={najiaResult} />
                 </div>
               )}
             </div>
-          ) : (            <div className="flex items-center justify-center h-full">
+          ) : (
+            <div className="flex items-center justify-center h-full">
               <div className="text-center text-white/70 max-w-lg">
                 <Sparkles className="h-16 w-16 mx-auto mb-6 opacity-50" />
                 <h2 className="text-2xl font-semibold mb-4">{t.divination.title}</h2>
@@ -1057,11 +1210,13 @@ ${result.notes ? `备注：${result.notes}` : ''}
                 </div>
               </div>
             </div>
-          )}
+          ))}
         </div>        {/* 右侧AI解卦对话栏 - 新功能区域 */}
         <div className="w-[280px] lg:w-[320px] xl:w-[360px] bg-[#111827] border-l border-[#374151] flex flex-col overflow-y-auto glass-effect shrink-0">
-          {result ? (
-            <div className="flex flex-col h-full">              {/* AI解卦对话区域 */}              <div className="p-4 border-b border-[#374151] flex-1 flex flex-col">
+          {(result || najiaResult) ? (
+            <div className="flex flex-col h-full">
+              {/* AI解卦对话区域 */}
+              <div className="p-4 border-b border-[#374151] flex-1 flex flex-col">
                 <h3 className="text-sm font-medium text-white/90 mb-3 flex items-center gap-2">
                   <Sparkles className="h-4 w-4" />
                   {t.divination.aiChat}
@@ -1157,29 +1312,64 @@ ${result.notes ? `备注：${result.notes}` : ''}
                   <Calendar className="h-4 w-4 mr-2" />
                   {t.history.saveToHistory}
                 </Button>
-              </div>
-
-              {/* 快速操作 */}
+              </div>              {/* 快速操作 */}
               <div className="p-4">
                 <h3 className="text-sm font-medium text-white/90 mb-3">{t.divination.quickActions}</h3>
                 <div className="space-y-2">
-                  <Button
-                    onClick={downloadResult}
-                    className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm"
-                    variant="outline"
-                    size="sm"
-                  >
-                    <Download className="h-4 w-4 mr-2" />
-                    {t.divination.downloadResult}
-                  </Button>                  <Button
-                    onClick={() => copyToClipboard(generateReportContent(result), t.divination.divinationResultCopied)}
-                    className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm"
-                    variant="outline"
-                    size="sm"
-                  >
-                    <Copy className="h-4 w-4 mr-2" />
-                    {t.divination.copyResult}
-                  </Button>
+                  {includeNajia && najiaResult ? (
+                    /* 纳甲模式的操作 */
+                    <>
+                      <Button
+                        onClick={() => {
+                          const content = generateNajiaReportContent(najiaResult);
+                          const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+                          const link = document.createElement('a');
+                          link.href = URL.createObjectURL(blob);
+                          link.download = `纳甲六爻占卜结果_${new Date().toISOString().slice(0, 10)}.txt`;
+                          link.click();
+                        }}
+                        className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm"
+                        variant="outline"
+                        size="sm"
+                      >
+                        <Download className="h-4 w-4 mr-2" />
+                        下载纳甲结果
+                      </Button>
+
+                      <Button
+                        onClick={() => copyToClipboard(generateNajiaReportContent(najiaResult), '纳甲占卜结果已复制到剪贴板')}
+                        className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm"
+                        variant="outline"
+                        size="sm"
+                      >
+                        <Copy className="h-4 w-4 mr-2" />
+                        复制纳甲结果
+                      </Button>
+                    </>
+                  ) : result ? (
+                    /* 传统模式的操作 */
+                    <>
+                      <Button
+                        onClick={downloadResult}
+                        className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm"
+                        variant="outline"
+                        size="sm"
+                      >
+                        <Download className="h-4 w-4 mr-2" />
+                        {t.divination.downloadResult}
+                      </Button>
+
+                      <Button
+                        onClick={() => copyToClipboard(generateReportContent(result), t.divination.divinationResultCopied)}
+                        className="w-full bg-[#1e293b] border border-[#374151] text-white/80 hover:bg-[#374151]/30 hover:text-white button-hover justify-start text-sm"
+                        variant="outline"
+                        size="sm"
+                      >
+                        <Copy className="h-4 w-4 mr-2" />
+                        {t.divination.copyResult}
+                      </Button>
+                    </>
+                  ) : null}
 
                   <Button
                     onClick={resetDivination}

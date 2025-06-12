@@ -375,23 +375,49 @@ async def najia_divination(request: NajiaRequest):
                 if line.type == "yin":
                     najia_params.append(4 if line.changing else 2)  # 老阴:4, 少阴:2
                 else:
-                    najia_params.append(1 if line.changing else 3)  # 老阳:1, 少阳:3
-        
-        # 生成纳甲分析
+                    najia_params.append(1 if line.changing else 3)  # 老阳:1, 少阳:3        # 生成纳甲分析
         najia_result = generate_najia_divination(
             params=najia_params,
             question=request.question,
             title=request.question,
             date=datetime.now()
         )
-          # 生成详细解释
+          
+        # 生成详细解释
         if najia_result:
             najia_interpretation = generate_najia_interpretation(najia_result['najia_result'], request.question)
             
+            # 解析卦名，确保前端显示正确的卦象
+            original_hexagram = najia_result['najia_result'].get('original_hexagram', {})
+            hexagram_name = original_hexagram.get('name', '未知卦')
+            
+            # 获取干支时间信息
+            ganzhi_time = najia_result['najia_result'].get('time_info', {})
+              # 构建符合前端期望的响应格式
+            # 获取原卦信息
+            original = najia_result['najia_result'].get('original_hexagram', {})
+            
             return {
                 "question": request.question,
-                "najia_analysis": najia_result,
-                "interpretation": najia_interpretation,
+                "divination_time": datetime.now().isoformat(),
+                "najia_analysis": najia_result['najia_result'],  # 添加完整的纳甲分析结果
+                "original_hexagram": {
+                    "name": original.get('name', '未知卦'),
+                    "mark": original.get('mark', ''),  # 添加卦码
+                    "gong": original.get('gong', '未知'),
+                    "type": original.get('type', ''),  # 添加卦类型
+                    "shiy": original.get('shiy', []),  # 添加世应爻信息
+                    "lines": najia_result['najia_result'].get('lines', [])
+                },
+                "changed_hexagram": najia_result['najia_result'].get('changed_hexagram', None),
+                "ganzhi_time": {
+                    "year_gz": ganzhi_time.get('year_gz', ''),
+                    "month_gz": ganzhi_time.get('month_gz', ''),
+                    "day_gz": ganzhi_time.get('day_gz', ''),
+                    "hour_gz": ganzhi_time.get('hour_gz', ''),
+                    "xunkong": ganzhi_time.get('xunkong', [])
+                },
+                "traditional_interpretation": najia_interpretation,
                 "timestamp": datetime.now().isoformat(),
                 "method": "manual" if request.hexagram_data else "auto"
             }
