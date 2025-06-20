@@ -1,0 +1,57 @@
+{
+  "name": "oriching-divination-workspace",
+  "version": "1.0.0",
+  "description": "道家风格占卜工作台 - 基于najia六爻排盘系统",
+  "main": "public/electron.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron-build": "npm run build && electron-builder",
+    "dist": "npm run build && electron-builder --publish=never"
+  },
+  "keywords": ["divination", "yijing", "najia", "electron", "vue"],
+  "author": "Oriching Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.4",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.1",
+    "vite": "^4.4.9",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "pinia": "^2.1.6",
+    "vue-router": "^4.2.4",
+    "@vueuse/core": "^10.4.1"
+  },
+  "build": {
+    "appId": "com.oriching.divination",
+    "productName": "Oriching 占卜工作台",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "public/electron.js",
+      "node_modules/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.lifestyle",
+      "icon": "public/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "public/icon.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "public/icon.png"
+    }
+  }
+}

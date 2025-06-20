@@ -1,0 +1,67 @@
+# THIRD-PARTY NOTICES AND ATTRIBUTIONS
+
+This software incorporates components from various third-party projects. Below are the acknowledgments and notices for these components:
+
+## najia Library
+
+This project uses the najia library for I Ching divination calculations.
+
+- **Original Author**: Please refer to the najia library documentation
+- **License**: Used under its original license terms
+- **Purpose**: Six-line divination calculations and traditional Chinese divination methods
+
+**Note**: We acknowledge and respect the intellectual property rights of the najia library authors. This component is used in accordance with its original license terms.
+
+## FastAPI
+
+- **Copyright**: Copyright (c) 2018 Sebastián Ramírez
+- **License**: MIT License
+- **Website**: https://fastapi.tiangolo.com/
+- **Purpose**: Web API framework for the backend service
+
+## Vue.js
+
+- **Copyright**: Copyright (c) 2013-present, Yuxi (Evan) You
+- **License**: MIT License
+- **Website**: https://vuejs.org/
+- **Purpose**: Frontend user interface framework
+
+## Vite
+
+- **Copyright**: Copyright (c) 2019-present, Yuxi (Evan) You and Vite contributors
+- **License**: MIT License
+- **Website**: https://vitejs.dev/
+- **Purpose**: Frontend build tool and development server
+
+## Pinia
+
+- **Copyright**: Copyright (c) 2019-present Eduardo San Martin Morote
+- **License**: MIT License
+- **Website**: https://pinia.vuejs.org/
+- **Purpose**: State management for Vue.js
+
+## Electron (if applicable)
+
+- **Copyright**: Copyright (c) 2013-2020 GitHub Inc.
+- **License**: MIT License
+- **Website**: https://www.electronjs.org/
+- **Purpose**: Desktop application framework
+
+## Other Dependencies
+
+This software may include other third-party libraries and components. Each component is used in accordance with its respective license terms. For a complete list of dependencies and their licenses, please refer to:
+
+- `najia/requirements.txt` (Python backend dependencies)
+- `frontend/package.json` (Node.js frontend dependencies)
+
+## Disclaimer
+
+The inclusion of third-party components does not imply any endorsement by their respective authors of this software or its use. All third-party components remain the property of their respective owners.
+
+## Cultural and Traditional Elements
+
+This software deals with traditional Chinese divination methods (I Ching/Yi Jing). We acknowledge that these practices have deep cultural and historical significance. This software is created with respect for these traditions and is intended for educational and personal use.
+
+---
+
+**For questions about third-party component licensing or to report attribution issues, please contact the project maintainer.**
