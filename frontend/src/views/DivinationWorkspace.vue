@@ -121,12 +121,12 @@
                 v-for="(gua, index) in guaHistory.slice(0, 5)" 
                 :key="index"
                 class="history-item"
-                @click="loadHistoryGua(gua)"
-              >
+                @click="loadHistoryGua(gua)"              >
                 <div class="history-mark">{{ gua.mark }}</div>
                 <div class="history-info">
                   <span class="history-name">{{ gua.name }}</span>
-                  <span class="history-time">{{ formatTime(gua.timestamp) }}</span>
+                  <span class="history-time" v-if="gua.timestamp">{{ formatTime(gua.timestamp) }}</span>
+                  <span class="history-time" v-else>时间未知</span>
                 </div>
               </div>
             </div>
@@ -266,8 +266,7 @@ const handleParamsUpdate = (params) => {
 const performDivination = async () => {
   isLoading.value = true
   errorMessage.value = ''
-  try {
-    const result = await divinationStore.performDivination(selectedMethod.value, guaParams)
+  try {    const result = await divinationStore.performDivination(selectedMethod.value, guaParams)
     currentGua.value = result
     guaHistory.value.unshift({
       ...result,
@@ -275,8 +274,12 @@ const performDivination = async () => {
       method: selectedMethod.value
     })
     
-    // 保存到本地存储
-    localStorage.setItem('guaHistory', JSON.stringify(guaHistory.value.slice(0, 50)))
+    // 保存到本地存储，确保时间戳格式正确
+    const historyToSave = guaHistory.value.slice(0, 50).map(gua => ({
+      ...gua,
+      timestamp: gua.timestamp instanceof Date ? gua.timestamp.toISOString() : gua.timestamp
+    }))
+    localStorage.setItem('guaHistory', JSON.stringify(historyToSave))
     
     // 自动请求AI解释
     if (currentGua.value) {
@@ -313,12 +316,25 @@ const loadHistoryGua = (gua) => {
 }
 
 const formatTime = (date) => {
-  return new Intl.DateTimeFormat('zh-CN', {
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  }).format(date)
+  try {
+    // 确保输入是有效的日期
+    const validDate = date instanceof Date ? date : new Date(date)
+    
+    // 检查日期是否有效
+    if (isNaN(validDate.getTime())) {
+      return '时间无效'
+    }
+    
+    return new Intl.DateTimeFormat('zh-CN', {
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    }).format(validDate)
+  } catch (error) {
+    console.error('格式化时间失败:', error)
+    return '时间无效'
+  }
 }
 
 const exportHistory = () => {
@@ -335,6 +351,7 @@ const exportHistory = () => {
 const clearHistory = () => {
   if (confirm('确定要清空所有历史记录吗？')) {
     guaHistory.value = []
+    localStorage.removeItem('guaHistory')
   }
 }
 
@@ -346,9 +363,15 @@ onMounted(() => {
   const savedHistory = localStorage.getItem('guaHistory')
   if (savedHistory) {
     try {
-      guaHistory.value = JSON.parse(savedHistory)
+      const parsedHistory = JSON.parse(savedHistory)
+      // 确保 timestamp 是 Date 对象
+      guaHistory.value = parsedHistory.map(gua => ({
+        ...gua,
+        timestamp: gua.timestamp ? new Date(gua.timestamp) : new Date()
+      }))
     } catch (error) {
       console.error('加载历史记录失败:', error)
+      guaHistory.value = []
     }
   }
 })
